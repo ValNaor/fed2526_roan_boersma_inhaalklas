@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Roan Boersma
 
   #### Je startniveau:
-  hier je startniveau (Rood)
+  Rood
 
   #### Je focus:
-  hier je focus (Responsive, indien ik de tijd heb ga ik uiteraard voor beide)
+  Responsive 1a/b, als alles soepel gaat 1c, en als dan alles echt heel makkelijk loopt ga ik voor responsive en surface
  
 </details>
 
