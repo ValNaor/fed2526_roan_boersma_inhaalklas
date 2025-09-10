@@ -36,15 +36,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  [https://www.zalando.nl/heren-home/ ](https://www.zalando.nl/heren-home/)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Homepagina zalando mannen,
+  De homepagina veranderd steeds dus het zal ongeveer de zelfde layout hebben met mogelijk andere kleuren en andere content. Dit is het geval door advertenties.
+  <img src="readme-images/homepagina_mobile.png" alt="Homepagina mobile device">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Detail pagina voor item: STRIPED JACKET UNISEX - Denim jacket - white van BLKVIS. recommended items kunnen mogelijk overtijd aangepast worden. In dat geval zal ik een ander item als vervanging gebruiken.  
+  <img src="readme-images/detailpagina_blkvis_item"  alt="Detail pagina voor item: STRIPED JACKET UNISEX - Denim jacket - white van BLKVIS.">
  
 </details>
 
