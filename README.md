@@ -45,7 +45,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Detail pagina voor item: STRIPED JACKET UNISEX - Denim jacket - white van BLKVIS. recommended items kunnen mogelijk overtijd aangepast worden. In dat geval zal ik een ander item als vervanging gebruiken.  
-  <img src="readme-images/detailpagina_blkvis_item"  alt="Detail pagina voor item: STRIPED JACKET UNISEX - Denim jacket - white van BLKVIS.">
+  <img src="readme-images/detailpagina_blkvis_item.png"  alt="Detail pagina voor item: STRIPED JACKET UNISEX - Denim jacket - white van BLKVIS.">
  
 </details>
 
