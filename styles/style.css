@@ -14,10 +14,97 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:#000000;
+	--color-background:#ffffff;
+	--color-border:rgb(210, 210, 212);
+	--color-background-2: color: rgb(240, 240, 240);
 }
+
+/***********/
+/* Tiempos */ 
+/***********/
+
+/* Light */
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TestTiemposFine-Light-BF66457a5102792.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TestTiemposFine-LightItalic-BF66457a50eb132.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Regular */ 
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TestTiemposFine-Regular-BF66457a50e8bc9.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TestTiemposFine-RegularItalic-BF66457a50e36f9.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TestTiemposFine-Medium-BF66457a50e62cd.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium Itallic */
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TestTiemposFine-MediumItalic-BF66457a511be83.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Semi Bold */
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TestTiemposFine-Semibold-BF66457a50f016a.otf') format('opentype');
+  font-weight: 600; 
+  font-style: normal;
+}
+
+/* Semi Bold Italic*/
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TestTiemposFine-SemiboldItalic-BF66457a50b0e18.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TestTiemposFine-Bold-BF66457a510211b.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* Bold Italic */
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TestTiemposFine-BoldItalic-BF66457a50b8568.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
 
 
 
@@ -32,19 +119,52 @@
 	margin: 0; 
 }
 
+svg{
+	color: var(--color-text);
+}
+
 li{
 	list-style: none;    
 	background-color: var(--color-background);  
 	flex-grow: 1;
+	max-height: fit-content;
+	padding: 0.5em;
 }
 
-img{
-	height: 30px;
+li:first-of-type{
+	flex-grow: 3;
 }
 
 button{
-	border-color: var(--color-background);
-	box-shadow: none;
+	border:none;
+	background-color: var(--color-background);
+}
+
+h1{
+	font-family: sans-serif, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+h2{
+	font-family: 'Tiempos, Times New Roman, serif';
+	font-weight: 500;
+	font-size: 24px;
+	color: var(--color-text);
+}
+
+h3{
+	font-family: sans-serif, Arial, Helvetica, sans-serif;;
+	font-weight: 700;
+	font-size: 16px;
+	color: var(--color-text);
+}
+
+h4{
+	font-family: 'Tiempos, Times New Roman, serif';
+	font-weight: 500;
+	font-size: 16px;
+	color: var(--color-text);
 }
 
 header nav ul{
@@ -52,10 +172,90 @@ header nav ul{
 	flex-direction: row;
 	background-color: var(--color-background);	
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 	flex-wrap: wrap;
-	padding: 1em;
+	padding: 0.8em 0.5em 0.8em 0.5em;
+	align-items: center;
+	border-bottom: solid 1px;
+	border-color: var(--color-border);
 }
 
+header nav:nth-child(2){
+	display: flex;
+	flex-direction: row;
+	background-color: var(--color-background);	
+	align-items: center;
+	flex-wrap: wrap;
+}
 
+header nav:nth-child(2){
+	border-bottom: solid 1px;
+	border-color: var(--color-border);
+}
+header nav:nth-child(2) button{
+	padding: 1em;
+	border-right: solid 1px;
+	border-color: var(--color-border);
+}
 
+header nav:nth-child(2) button:nth-of-type(2){
+	padding-right: 1.5em;
+}
+
+input{
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	color: var(--color-border);
+	padding: 1em;
+	flex-grow: 2;
+	border: none;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	margin: 0em 1.5em 0em 1.5em;
+	padding-top: 3em;
+}
+
+main section:nth-child(1){
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	justify-items: start;
+	align-items: center;
+	line-height: 2em
+}
+
+main section:nth-child(1) h1{
+	grid-column: 1/3;
+}
+main section:nth-child(1) h2{
+	grid-row: 2/2;
+	grid-column: 1/3;
+}
+
+main section:nth-child(1) button{
+	grid-column: 3/3;
+	height: 24px;
+	justify-self: end;
+}
+
+main section:nth-child(1) button svg{
+	color:var(--color-background-2);
+}
+
+main section:nth-child(2){
+	display: grid;
+	background-color: var(--color-background);
+	grid-template-rows: 2fr 1fr;
+	height: 371px;
+}
+
+main section:nth-child(2) img{
+	object-fit: cover;
+}
+
+main section:nth-child(2) article{
+	background-color: var(--color-background-2);
+	padding: 1em;
+}
