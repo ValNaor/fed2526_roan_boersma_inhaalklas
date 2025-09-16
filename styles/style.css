@@ -216,6 +216,7 @@ main{
 	flex-direction: column;
 	margin: 0em 1.5em 0em 1.5em;
 	padding-top: 3em;
+	overflow:hidden;
 }
 
 main section:nth-child(1){
@@ -246,16 +247,15 @@ main section:nth-child(1) button svg{
 
 main section:nth-child(2){
 	display: grid;
+	margin-top: 2em;
 	background-color: var(--color-background);
-	grid-template-rows: 2fr 1fr;
-	height: 371px;
-}
-
-main section:nth-child(2) img{
-	object-fit: cover;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 main section:nth-child(2) article{
 	background-color: var(--color-background-2);
 	padding: 1em;
+	max-width: 100dvw;
+	
 }
