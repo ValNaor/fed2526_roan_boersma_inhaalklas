@@ -70,7 +70,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   Breakdown schets van de detail pagina
-  <img src="readme-images/breakdown_schets_detail_pagina_volledig" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown_schets_detail_pagina_volledig.jpg" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   Breakdown van een paar menu's op de detail pagina
