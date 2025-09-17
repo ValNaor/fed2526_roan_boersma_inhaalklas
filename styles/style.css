@@ -17,7 +17,8 @@
 	--color-text:#000000;
 	--color-background:#ffffff;
 	--color-border:rgb(210, 210, 212);
-	--color-background-2: color: rgb(240, 240, 240);
+	--color-background-2: rgb(240, 240, 240);
+	--color-deal-label: rgb(217, 0, 11);
 }
 
 /***********/
@@ -117,6 +118,18 @@
 *{
 	padding: 0;
 	margin: 0; 
+	overflow-x: hidden;
+}
+
+.deal-label { /*placeholder*/
+  display: inline-block;   
+  background-color: var(--color-deal-label);
+  color: white;                
+  font-weight: bold;          
+  font-size: 0.9rem;           
+  padding: 0.2em 0.6em;        
+  border-radius: 2px;          
+  position: absolute; 
 }
 
 svg{
