@@ -70,7 +70,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   Breakdown schets van de detail pagina
-  <img src="readme-images/breakdown_schets_detail_pagina_volledig" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown_schets_detail_pagina_volledig.jpg" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   Breakdown van een paar menu's op de detail pagina
@@ -97,11 +97,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Roan           | Sidney             | Tyneisha     | Lam              |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Vragen over inline tags: Prijs | en dit             | en ik dit    | en dan ik dat    |
+  | Footer: nesting, h2?`, article?        | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Heb ik svg's juist gedaan ?| ...                | ...          | ...              |
+  | code voor invis h2| ...                | ...          | ...              |
 
 
   ### Verslag van meeting
