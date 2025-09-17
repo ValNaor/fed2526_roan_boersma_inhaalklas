@@ -36,7 +36,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  [https://www.zalando.nl/heren-home/ ](https://www.zalando.nl/heren-home/)
+ [https://www.zalando.nl/heren-home/ ](https://www.zalando.nl/heren-home/)](https://www.zalando.nl/wardrobe-essentials-heren/?_rfl=en)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina zalando mannen,
@@ -69,10 +69,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/homepagina_mobile" alt="breakdown van de hele pagina">
+  Breakdown schets van de detail pagina
+  <img src="readme-images/breakdown_schets_detail_pagina_volledig" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  Breakdown van een paar menu's op de detail pagina
+  <img src="readme-images/breakdown_sketch_detail pagina_mobile_dynamish_element.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
