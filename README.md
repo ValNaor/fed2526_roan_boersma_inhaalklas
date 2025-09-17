@@ -99,7 +99,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Roan           | Sidney             | Tyneisha     | Lam              |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  |  Vragen over inline tags | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
