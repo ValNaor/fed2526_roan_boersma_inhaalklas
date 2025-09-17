@@ -99,8 +99,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Roan           | Sidney             | Tyneisha     | Lam              |
   | ---            | ---                | ---          | ---              |
-  |  Vragen over inline tags: Prijs | en dit             | en ik dit    | en dan ik dat    |
-  | Footer         | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Vragen over inline tags: Prijs | en dit             | en ik dit    | en dan ik dat    |
+  | Footer: nesting, h2?`, article?        | dit als er tijd is | nog een punt | dit wil ik zeker |
   | Heb ik svg's juist gedaan ?| ...                | ...          | ...              |
   | code voor invis h2| ...                | ...          | ...              |
 
