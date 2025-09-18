@@ -97,12 +97,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Roan           | Sidney             | Tyneisha     | Lam                                      |
-  | ---            | ---                | ---          | html sections?	                          |
-  | Vragen over inline tags: Prijs      | en dit       | en ik dit    | css carousel             |
-  | Footer: nesting, h2?`, article?        | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | Heb ik svg's juist gedaan ?| ...                | ...                      | ...              |
-  | code voor invis h2| ...                | ...                      | ...              |
+  | Roan           | Sidney             | Tyneisha     | Lam              |
+  | ---            | ---                | ---          | ---              |
+  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
