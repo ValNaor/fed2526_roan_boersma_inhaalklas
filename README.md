@@ -102,7 +102,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Vragen over inline tags: Prijs      | en dit       | en ik dit    | css carousel             |
   | Footer: nesting, h2?`, article?        | dit als er tijd is | nog een punt | dit wil ik zeker |
   | Heb ik svg's juist gedaan ?| ...                | ...                      | ...              |
-  | code voor invis h2| 
+  | code voor invis h2| ...                | ...                      | ...              |
 
 
   ### Verslag van meeting
