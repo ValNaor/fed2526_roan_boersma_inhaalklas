@@ -91,18 +91,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+  - Alt tags zijn goed en discriptive.
+  - Volgorde van h2 naar h3 en dergelijke elements wordt correct toe gepast.
+  - Sommige tags die nu gebruikt worden zijn niet correct aangezien deze een eigen element hebben die daarvoor gebruikt kan worden denk aan, data, tijd, prijs.
+  - 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Roan           | Sidney             | Tyneisha     | Lam              |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Roan   
+  - Wat zijn de correcte elements voor: tijd, prijs, etc.
+  - Gebruik van elements, is nu juist?
+  - Is de nesting in de footer correct?
+  - Heb ik de SVG's juist uitgevoerdt
+  - Code voor invis class.
 
+  
+  Sidney
+  
+  Tyneisha 
+  
+  Lam 
+  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -110,10 +122,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Een aantal elementen moeten binnen een unordered-list inplaats van hoe het nu staat, dit geld voor alle ul li items die momenteel in mijn footer staan.
 <img src="readme-images/voortgangs_gesprek_1.jpg" alt="screenshot van een gedeelte code relevant tot vorig benoemde punt">
+  
   - Pricing elements, time elements
 <img src="readme-images/voortgangs_gesprek_1_2.jpg" alt="screenshot van een gedeelte code relevant tot vorig benoemde punt">
-  - nog een punt
-  - ...
+
+  -  Invis class is te vinden op brightspace
+  -  Data element voor tijd / datum
+  -  Verder gaat het de jusite kant op en moet ik gewoon lekker verder gaan met de HTML voor de tweede pagina, voordat ik aab de css ga werken.
 
 </details>
 
