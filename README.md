@@ -107,7 +107,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+
+  - Een aantal elementen moeten binnen een unordered-list inplaats van hoe het nu staat.
+<img src="readme-images/voortgangs_gesprek_1.jpg" alt="screenshot van een gedeelte code relevant tot vorig benoemde punt">
   - punt 2
   - nog een punt
   - ...
