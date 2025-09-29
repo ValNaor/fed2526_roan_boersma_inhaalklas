@@ -88,6 +88,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   ### Zoekfunctie is toegankelijk
   - De zoekbalk is goed bereikbaar met het toetsenbord en de screenreader leest de zoekresultaten duidelijk voor.
+  <img src="readme-images/narrator_test_readme_image_1"  alt="Screenreader op de searchbalk met BLKVIS ingevuld in de searchbar">
   - Filteropties zijn aanwezig en worden correct voorgelezen, hoewel ze soms wat uitgebreid zijn dit kan goed of slecht zijn.
 
   ### Algemene structuur en opmaak zijn overzichtelijk
