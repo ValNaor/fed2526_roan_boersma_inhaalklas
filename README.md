@@ -65,6 +65,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     
   ### Bestelproces
   - Het volledig afronden van een bestelling zonder muis is niet mogelijk.
+    <img src="readme-images/narrator_test_readme_image_2"  alt="Betaal venster van zalando, is niet bereikbaar zonder gebruik van pijl toetsen">
   - Adresinvoer werkt niet goed: na postcode kun je niet verder tabben naar een adreskeuze.
   - Bezorgopties en betaalmethodes zijn soms niet toegankelijk; keuzerondjes missen duidelijke labels of zijn helemaal niet te bereiken.
 
