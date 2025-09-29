@@ -57,7 +57,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  ### Niet en wel goed
+  ##Navigatie & toetsenbord
+
+  - Niet alle knoppen en links zijn bereikbaar met het toetsenbord.
+  - De focus is niet altijd zichtbaar, waardoor je niet ziet waar je je bevindt.
+  - Het hoofdmenu en submenu’s werken niet logisch: soms moet je pijltjestoetsen gebruiken in plaats van tab, wat verwarrend is.
+    
+  ##Bestelproces
+  - Het volledig afronden van een bestelling zonder muis is niet mogelijk.
+  - Adresinvoer werkt niet goed: na postcode kun je niet verder tabben naar een adreskeuze.
+  - Bezorgopties en betaalmethodes zijn soms niet toegankelijk; keuzerondjes missen duidelijke labels of zijn helemaal niet te bereiken.
+
+  ##Productpagina’s
+  - Maatkeuze-opties hebben soms geen labels, waardoor de screenreader niet duidelijk kan voorlezen wat je selecteert.
+  - Prijzen en productinformatie worden niet altijd correct voorgelezen.
+
+  ##Links, knoppen & iconen
+  - Sommige iconen (bijv. SVG’s) hebben geen beschrijving, waardoor je niet weet wat ze doen.
+  - Texten worden soms dubbel voorgelezen, bijvoorbeeld bij de cookiebanner, ook wordt er veel onnodige informatie voorgelezen.
+
+  ##Visueel & design
+  - Het contrast is op sommige plekken onvoldoende, waardoor teksten lastig te lezen zijn.
+  - Er is geen dark mode, waardoor gebruikers altijd in de lichte weergave zitten.
 
 </details>
 
