@@ -57,40 +57,40 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  ### Niet goed
-  # Navigatie & toetsenbord
+  # Niet goed
+  ### Navigatie & toetsenbord
   - Niet alle knoppen en links zijn bereikbaar met het toetsenbord.
   - De focus is niet altijd zichtbaar, waardoor je niet ziet waar je je bevindt.
   - Het hoofdmenu en submenu’s werken niet logisch: soms moet je pijltjestoetsen gebruiken in plaats van tab, wat verwarrend is.
     
-  # Bestelproces
+  ### Bestelproces
   - Het volledig afronden van een bestelling zonder muis is niet mogelijk.
   - Adresinvoer werkt niet goed: na postcode kun je niet verder tabben naar een adreskeuze.
   - Bezorgopties en betaalmethodes zijn soms niet toegankelijk; keuzerondjes missen duidelijke labels of zijn helemaal niet te bereiken.
 
-  # Productpagina’s
+  ### Productpagina’s
   - Maatkeuze-opties hebben soms geen labels, waardoor de screenreader niet duidelijk kan voorlezen wat je selecteert.
   - Prijzen en productinformatie worden niet altijd correct voorgelezen.
 
-  # Links, knoppen & iconen
+  ### Links, knoppen & iconen
   - Sommige iconen (bijv. SVG’s) hebben geen beschrijving, waardoor je niet weet wat ze doen.
   - Texten worden soms dubbel voorgelezen, bijvoorbeeld bij de cookiebanner, ook wordt er veel onnodige informatie voorgelezen.
   - Soms worden headings overgeslagen.
 
-  # Visueel & design
+  ### Visueel & design
   - Het contrast is op sommige plekken onvoldoende, waardoor teksten lastig te lezen zijn.
   - Er is geen dark mode, waardoor gebruikers altijd in de lichte weergave zitten.
 
-  ## Wel goed
-  # Productpagina’s zijn goed te navigeren
+  # Wel goed
+  ### Productpagina’s zijn goed te navigeren
   - De productinformatie, zoals prijs, maat en kleur, wordt duidelijk voorgelezen door de screenreader.
   - De tabvolgorde is logisch, waardoor je goed door de verschillende secties van de pagina kan navigeren.
   
-  # Zoekfunctie is toegankelijk
+  ### Zoekfunctie is toegankelijk
   - De zoekbalk is goed bereikbaar met het toetsenbord en de screenreader leest de zoekresultaten duidelijk voor.
   - Filteropties zijn aanwezig en worden correct voorgelezen, hoewel ze soms wat uitgebreid zijn dit kan goed of slecht zijn.
 
-  # Algemene structuur en opmaak zijn overzichtelijk
+  ### Algemene structuur en opmaak zijn overzichtelijk
   - De website maakt gebruik van duidelijke koppen en secties, waardoor je snel kunt navigeren naar het gewenste onderdeel.
   - Er is de mogelijkheig om lange carousels over te slaan.
   - Er wordt consistent gebruik gemaakt van ARIA-labels / Alt tags.
