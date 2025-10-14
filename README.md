@@ -287,7 +287,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. [bron 1 voor de svg's zodat ik ze nogsteed kan aanpassen]([https://chatgpt.com/share/68cadc12-ebe0-800c-804e-4ffe68e9aba7](https://www.svgviewer.dev/))
+  1. [bron 1 voor de svg's zodat ik ze nogsteed kan aanpassen](https://www.svgviewer.dev/)
   2. [bron 2 (Grid info: ](https://www.youtube.com/watch?v=SIvCb7Ze2HA&t=982s)
   3. [bron 3 (Flexbox info:](https://www.youtube.com/watch?v=euEYZ4DtIG0&t=11064s)
   4. [bron 4 (Time element:](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/time)
