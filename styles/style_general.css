@@ -1,0 +1,559 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--color-text:#000000;
+	--color-background:#ffffff;
+	--color-border:rgb(210, 210, 212);
+	--color-background-2: rgb(240, 240, 240);
+	--color-deal-label: rgb(217, 0, 11);
+	--color-brand-mark: rgb(255, 77, 0);
+	--color-highlighted-buttons: rgb(100, 43, 224);
+  --color-background-3:rgb(242, 196, 46);
+}
+
+/***********/
+/* Tiempos */ 
+/***********/
+
+/* Tiempos font family */
+
+/* Headline */
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-Light.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposHeadline-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposHeadline-LightItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposHeadline-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposHeadline-Regular.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposHeadline-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposHeadline-RegularItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposHeadline-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposHeadline-Medium.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposHeadline-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposHeadline-MediumItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposHeadline-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposHeadline-Semibold.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposHeadline-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposHeadline-SemiboldItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposHeadline-SemiboldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposHeadline-Bold.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposHeadline-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposHeadline-BoldItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposHeadline-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposHeadline-Black.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposHeadline-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposHeadline-BlackItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposHeadline-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Fine */
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-Light.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposFine-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-LightItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposFine-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-Regular.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposFine-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-RegularItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposFine-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-Medium.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposFine-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-MediumItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposFine-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-Semibold.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposFine-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-SemiboldItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposFine-SemiboldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-Bold.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposFine-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-BoldItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposFine-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-Black.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposFine-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposFine-BlackItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposFine-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Text */
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposText-Regular.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposText-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposText-RegularItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposText-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposText-Medium.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposText-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposText-MediumItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposText-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposText-Bold.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposText-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('../fonts/tiempos/TiemposText-BoldItalic.woff2') format('woff2'),
+       url('../fonts/tiempos/TiemposText-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+*{
+	padding: 0;
+	margin: 0;
+	scrollbar-width: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+h3, h4, p, a {
+	order: 2;
+	text-decoration: none;
+  color: var(--color-text);
+}
+
+svg{
+  width: 24px;
+  height: 24px; 
+	fill: var(--color-text);
+	stroke: none;
+}
+
+li{
+	list-style: none;    
+	background-color: var(--color-background);  
+	flex-grow: 1;
+	max-height: fit-content;
+
+}
+
+button{
+	border:none;
+	background-color: var(--color-background);
+}
+
+p{
+  font-family: sans-serif;
+  font-size: 1em;
+	margin: 0em 0em 0em 2.3em;
+}
+
+h1{
+	font-family: sans-serif, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0em 0em 0em 1.5em;
+}
+
+h2{
+	font-family: sans-serif, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0em 0em 0em 1.5em;
+  text-overflow: ellipsis;
+}
+
+h3{
+	font-family: 'Tiempos', 'Times New Roman', Times, serif;
+	font-weight: 400;
+	font-size: 24px;
+	color: var(--color-text);
+	margin: 0em 0em 0em 1.5em;
+  text-overflow: ellipsis;
+}
+
+h4{
+	font-family: 'Tiempos, Times New Roman, serif';
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--color-text);
+	padding: 0em 0em 0em 1.5em;
+  text-overflow: ellipsis;
+}
+
+header nav ul li:nth-child(1) a svg:nth-child(1){
+	fill: var(--color-brand-mark);
+  width: 132px;
+	stroke: none;
+}
+
+header nav ul li:nth-child(1) a path:nth-child(2){
+	fill: var(--color-text);
+	stroke: none;
+}
+
+header nav ul{
+	display: flex;
+	flex-direction: row;
+	background-color: var(--color-background);	
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0.8em 0.5em 0.8em 1em;
+	align-items: center;
+	border-bottom: solid 1px;
+	border-color: var(--color-border);
+}
+
+header nav:nth-child(2) button:nth-child(1) svg{
+	fill: var(--color-text);
+	stroke: var(--color-text);
+}
+header nav:nth-child(2){
+	display: flex;
+	flex-direction: row;
+	background-color: var(--color-background);	
+	align-items: center;
+	flex-wrap: wrap;
+	
+}
+
+header nav:nth-child(2){
+	border-bottom: solid 1px;
+	border-color: var(--color-border);
+}
+header nav:nth-child(2) button{
+	padding: 1em;
+	border-right: solid 1px;
+	border-color: var(--color-border);
+}
+
+header nav:nth-child(2) button:nth-of-type(2){
+	padding-right: 1.5em;
+}
+
+input{
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	color: var(--color-border);
+	padding: 1em;
+	flex-grow: 2;
+	border: none;
+}   
+
+footer{
+  background-color: var(--color-background-2);
+}
+
+footer ul li:nth-child(-n+2) button svg, footer ul li:nth-child(5) button svg, footer ul li:nth-child(6) button svg{
+  fill: var(--color-text);
+  stroke: none;
+}
+
+footer ul li{
+    background-color: var(--color-background-2);
+    padding:1em;
+    border-bottom: solid 1px;
+    border-color: var(--color-border);
+}
+footer ul li button{
+  background-color: var(--color-background-2);
+  display: grid;
+  align-items: center;
+}
+
+footer ul li button h2{
+  grid-column: 2 / span 3;
+  grid-row: 1;
+}
+
+footer ul li button svg{
+    grid-column: 1  / span 2;
+    grid-row: 1;
+    stroke: var(--color-text);
+    fill: var(--color-background-2);
+    margin-left: 1em;
+}
+
+footer ul li button{
+  background-color: var(--color-background-2);
+}
+
+footer ul li ul{
+  display: none;
+}
+
+footer h2{
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 2em;
+}
+
+footer h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+footer section{
+  display: flex;
+  flex-wrap:wrap;
+  gap: 1em;
+  padding: 2em;
+}
+
+footer section a:nth-child(1), footer section a:nth-child(2){
+  grid-row: 1;
+  
+}
+
+footer section a:nth-child(3){
+  grid-column: 3;
+
+}
+
+footer section a:last-of-type{
+  flex-basis: 100%;
+}
+
+footer section h2{
+ order: 2;
+ margin: 2em 0em 0em 0em;
+ padding: 0;
+ flex-basis: 100%;
+}
+
+footer section h3{
+  order: 5;
+  margin: 1em 0em 0em 0em;
+  flex-basis: 100%;
+}
+
+footer section img{
+  order:4;
+}
+
+footer svg{
+  order: 7;
+}
+
+footer section svg:last-of-type{
+  stroke: var(--color-text);
+  stroke-width: 2;
+  fill: none ;
+}

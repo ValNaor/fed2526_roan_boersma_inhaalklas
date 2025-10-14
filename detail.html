@@ -8,7 +8,9 @@
 	
 	<title>Online op Zalando</title>
 	
-	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/style_page2.css" rel="stylesheet">
+	<link href="styles/style_general.css" rel="stylesheet">
+	<link href="scripts/script.js" rel="javasheet">
 	<link rel="icon" type="image/svg+xml" href="images/zalando_brandmark_orange_RGB.png">
 </head>
 
@@ -75,11 +77,12 @@
 
     <main>
         <section>
-            <h1>STRIPED JACKET UNISEX - Spijkerjas - wit</h1>
+            <h1>Stripped jacket unisex- Spijkerjas - wit</h1>
             <a>BLKVIS</a>
-            <data value="99,95">€99,95</data>
-            <p>inclusief btw</p>
-            <p>Kleur:<strong>white</strong></p>
+			<p>Dit is de item tracker</p>
+            <p>€99,95</p>
+            <p>Inclusief btw</p>
+            <p>Kleur:<strong> wit</strong></p>
             <ul>
                 <li>
                     <img src="images/detailpage_section_1_image_1.jpg" alt="Donker model op een witte achtergrond, gekleed in een 2-deelig pak met goude sieraden close up">
@@ -116,29 +119,33 @@
                 </li>
                 <!-- Item tracker moet nog even kijken hoe ik dit ga doen-->
             </ul>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"  stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="4" r="1.2" />
-                <circle cx="6" cy="8" r="1.2" />
-                <circle cx="18" cy="8" r="1.2" />
-                <circle cx="12" cy="12" r="1.2" />
-              <circle cx="8" cy="20" r="1.2" />
-              <circle cx="16" cy="20" r="1.2" />
-             <!-- M(start punt) X(7.2) Y(7a9) dit geeft aan waar de curve begint -->
-               <path d="M7.2 7a9 8 0 0 1 9.6 0" />
-                <path d="M9.2 20c.8-10 5.5-8 5.6 0" />
-            </svg>
-            <p>Wij raden je aan om <strong>Maat S te kopen</strong></p>
-            <button>Waarom?</button>
+			<article>
+            	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<!-- Zelfde  als daaronder maar dan is het cx cy r-->
+                	<circle cx="12" cy="6" r="1.2" />
+                	<circle cx="6" cy="8" r="1.2" />
+                	<circle cx="18" cy="8" r="1.2" />
+                	<circle cx="12" cy="12" r="1.2" />
+            		<circle cx="8" cy="20" r="1.2" />
+            		<circle cx="16" cy="20" r="1.2" />
+             		<!-- M(start punt) X(7.2) Y(7a9) dit geeft aan waar de curve begint -->
+               		<path d="M7.2 7a9 8 0 0 1 9.6 0" />
+            		<path d="M9.2 20c.8-10 5.5-8 5.6 0" />
+            	</svg>
+            	<p>Wij raden je aan om <strong>Maat S te kopen</strong></p>
+            	<button>Waarom?</button>
+			</article>
             <button>
                 S 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-hidden="true">
-                    <path d="M6 16 L12 22" />
-                    <path d="M18 16 L12 22" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+                    <path d="M6 12 L12 18" />
+                    <path d="M18 12 L12 18" />
                 </svg>
             </button>
             <button>Bestel nu!</button>
-            <article>
-                <h2>Article</h2>
+		</section>
+		<section>
+			<h2 class="visually-hidden">Specificaties Zalando verzending</h2>
                 <p>Verkocht en verzonden door Zalando</p>
                 <p>Spaar punten en ontgrendel beloningen</p>
                 <a>Activeer plus. Helemaal gratis!</a>
@@ -148,7 +155,7 @@
                 <p>30 dagen recht op retour</p>
                 <p>Items herverkopen</p>
                 <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" role="img" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     				    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c6.624-.008 11.992-5.376 12-12 0-6.627-5.373-12-12-12m0 22.5C6.201 22.5 1.5 17.799 1.5 12S6.201 1.5 12 1.5c5.796.007 10.493 4.704 10.5 10.5 0 5.799-4.701 10.5-10.5 10.5"></path>
    					    <circle cx="12" cy="5.6" r="1.1"></circle>
     				    <path d="M12 8.25a.75.75 0 0 0-.75.75v9.75a.75.75 0 1 0 1.5 0V9a.75.75 0 0 0-.75-.75"></path>
@@ -161,7 +168,6 @@
 			    </svg>
                 <!--svg back pijl-->
                 <!--svg return-->
-            </article>
         </section>
         <section>
             <button>
@@ -252,7 +258,7 @@
             <h2>Varianten van deze look</h2>
             <h3>Wat vind je hiervan?</h3>
             <a>Ontdek meer</a>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" role="img" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     				<path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c6.624-.008 11.992-5.376 12-12 0-6.627-5.373-12-12-12m0 22.5C6.201 22.5 1.5 17.799 1.5 12S6.201 1.5 12 1.5c5.796.007 10.493 4.704 10.5 10.5 0 5.799-4.701 10.5-10.5 10.5"></path>
    					<circle cx="12" cy="5.6" r="1.1"></circle>
     				<path d="M12 8.25a.75.75 0 0 0-.75.75v9.75a.75.75 0 1 0 1.5 0V9a.75.75 0 0 0-.75-.75"></path>
@@ -262,15 +268,13 @@
 					<a href="#">
 						<h2>Bomber Jacket - black wash</h2>
 						<h3>Weekday</h3>
-						<data value="100.00">€100,00</data>
+						<p>€100,00</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
   							<rect width="34.056" height="14.167" x=".417" y=".917" stroke-width=".833" rx="7.083"/>
   							<path d="M13.273 4.22q-.614-.311-1.406-.312H8.22v3.814H5.465v1.373H8.22v2.621h1.695V9.095h1.951q.792 0 1.406-.302.612-.3.959-.891.346-.593.346-1.395c0-.536-.116-.989-.346-1.383a2.3 2.3 0 0 0-.96-.904zm-.775 3.173q-.352.33-.909.33H9.916V5.29h1.673q.58 0 .92.323.34.325.34.892c0 .378-.117.667-.351.887M16.761 3.908h-1.606v7.807h1.606zM21.39 9.273q0 .38-.134.664t-.39.44a1.1 1.1 0 0 1-.59.157.9.9 0 0 1-.692-.285q-.268-.284-.268-.797V6.094H17.7v3.792q0 .915.513 1.445.514.53 1.35.529.658 0 1.131-.274.475-.272.73-.797v.925h1.596v-5.62h-1.628zM28.195 8.927a2.4 2.4 0 0 0-1.082-.514l-1.25-.256a.9.9 0 0 1-.413-.167.4.4 0 0 1-.156-.335q0-.235.218-.385t.563-.151q.234 0 .418.067a.64.64 0 0 1 .296.212.9.9 0 0 1 .156.357h1.607q-.09-.903-.737-1.356-.647-.451-1.718-.452-.702 0-1.238.213-.536.211-.848.624a1.53 1.53 0 0 0-.312.948q0 .702.452 1.087.451.385 1.165.541l1.149.245q.279.067.424.19.144.122.144.323a.45.45 0 0 1-.228.402q-.229.144-.62.144-.434 0-.696-.173-.263-.173-.351-.54H23.52q.056.567.374 1.003t.887.669q.568.234 1.36.234.715 0 1.278-.206t.892-.624.329-.999q0-.724-.446-1.104z"/>
 						</svg>
-						<svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" id="Outlined" xmlns="http://www.w3.org/2000/svg">
-							<path d="M28.61,11.67H20l-2.66-8.2a1.39,1.39,0,0,0-2.64,0L12,11.67H3.39a1.39,1.39,0,0,0-.82,2.51l7,5.07L6.89,27.46a1.39,1.39,0,0,0,1.32,1.82A1.43,1.43,0,0,0,9,29l7-5.07L23,29a1.43,1.43,0,0,0,.81.27,1.39,1.39,0,0,0,1.32-1.82l-2.66-8.21,7-5.07A1.39,1.39,0,0,0,28.61,11.67Zm-7.34,6-1.17.86.44,1.38,2.09,6.41-5.45-4L16,21.46l-1.18.86-5.45,4,2.09-6.41.44-1.38-1.17-.86-5.45-4h8.19l.45-1.38L16,5.89l2.08,6.4.45,1.38h8.19Z"/>
-						</svg>
+						
 						<img src="images/detailpage_section_2_image_1.jpg" alt="Licht model op een witte achtergrond, gekleed in een zwarte bomberjack close up">
 					</a>
 					<button>
@@ -284,7 +288,7 @@
 					<a href="#">
 						<h2>EMBROIDERED - Bomber Jacket - khaki</h2>
 						<h3>Bershka</h3>
-						<data value="49.99">€49.99</data>
+						<p>€49.99</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
   							<rect width="34.056" height="14.167" x=".417" y=".917" stroke-width=".833" rx="7.083"/>
@@ -303,7 +307,7 @@
 					<a href="#">
 						<h2>APEX JACKET - Spijkerjas - dark raw blue</h2>
 						<h3>Pegador</h3>
-						<data value="89,95">€89,95</data>
+						<p>€89,95</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
   							<rect width="34.056" height="14.167" x=".417" y=".917" stroke-width=".833" rx="7.083"/>
@@ -322,7 +326,7 @@
 					<a href="#">
 						<h2>UNISEX - Spijkerjas - Hellblau</h2>
 						<h3>New Era</h3>
-						<data value="89,95">€89,95</data>
+						<p>€89,95</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
   							<rect width="34.056" height="14.167" x=".417" y=".917" stroke-width=".833" rx="7.083"/>
@@ -342,7 +346,7 @@
 					<a href="#">
 						<h2>ONSCALS LIFE VEST - Bodywarmer - antique</h2>
 						<h3>Only&Sons</h3>
-						<data value="29,99">€29,99</data>
+						<p>€29,99</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
   							<rect width="34.056" height="14.167" x=".417" y=".917" stroke-width=".833" rx="7.083"/>
@@ -362,7 +366,7 @@
 					<a href="#">
 						<h2>LOS ANGELES LAKERS MOTO UNISEX - Trainingsvest - blue/white</h2>
 							<h3>New Era</h3>
-							<data value="145,95">€145,95</data>
+							<p>€145,95</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
   								<rect width="34.056" height="14.167" x=".417" y=".917" stroke-width=".833" rx="7.083"/>
@@ -381,7 +385,7 @@
 					<a href="#">
 						<h2>Varsity - Jax - Teak</h2>
 							<h3>Les Deux</h3>
-							<data value="269,95">€269,95</data>
+							<p>€269,95</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
   								<rect width="34.056" height="14.167" x=".417" y=".917" stroke-width=".833" rx="7.083"/>
@@ -412,7 +416,7 @@
 					<a href="#">
 						<h2>SOURCE POCKET CREWNECK UNISEX - Sweater - black</h2>
 						<h3>BLKVIS</h3>
-						<data value="84.95">€84,95</data>
+						<p>€84,95</p>
 						<p>Premium Levering</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -432,9 +436,9 @@
 					<a href="#">
 						<h2>UNISEX - Overhemdblouse - antique white</h2>
 						<h3>BLKVIS</h3>
-						<data value="76,95">€76,95</data>
-						<data value="was 109,95"><s>€109,95</s></data>
-						<data value="30% off">-30%</data>
+						<p>€76,95</p>
+						<p><s>€109,95</s></p>
+						<p>-30%</p>
 					<!--Svg rating sterren-->
 						<img src="images/detailpage_section_3_image_2.jpg" alt="Donker model op een witte achtergrond, gekleed in een groene bomberjack close up">
 					</a>
@@ -450,7 +454,7 @@
 					<a href="#">
 						<h2>ORIGINALS WORKWEAR JACKET UNISEX - Spijkerjas - peacoat</h2>
 						<h3>BLKVIS</h3>
-						<data value="119,95">€119,95</data>
+						<p>€119,95</p>
 						<p>Premium Levering</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -470,7 +474,7 @@
 					<a href="#">
 						<h2>UNISEX - Poloshirt - antique white</h2>
 						<h3>BLKVIS</h3>
-						<data value="69,95">€69,95</data>
+						<p>€69,95</p>
 						<p>Premium Levering</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -491,9 +495,9 @@
 					<a href="#">
 						<h2>GEMME SHIRT UNISEX - Overhemdblouse - black</h2>
 						<h3>BLKVIS</h3>
-						<data value="55,95">€55,95</data>
-						<data value="was 79,95"><s>€79,95</s></data>
-						<data value="30% off">-30%</data>
+						<p>€55,95</p>
+						<p><s>€79,95</s></p>
+						<p>-30%</p>
 						<p>Premium Levering</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -514,7 +518,7 @@
 					<a href="#">
 						<h2>ALLOVER TRACK JACKET UNISEX - Trainingsvest - antique white</h2>
 							<h3>BLKVIS</h3>
-							<data value="79,95">€79,95</data>
+							<p>€79,95</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -534,9 +538,9 @@
 					<a href="#">
 						<h2>SCRIPT SHORTSLEEVE UNISEX - Overhemdblouse - peacoat</h2>
 							<h3>BLKVIS</h3>
-							<data value="52,45">€52,45</data>
-							<data value="was 69,95"><s>€69,95</s></data>
-							<data value="25% off">-25%</data>
+							<p>€52,45</p>
+							<p><s>€69,95</s></p>
+							<p>-25%</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -558,9 +562,9 @@
 					<a href="#">
 						<h2>ALLOVER TRACK PANTS UNISEX - Trainingsbroek - black</h2>
 							<h3>BLKVIS</h3>
-							<data value="52,45">€52,45</data>
-							<data value="was 69,95"><s>€69,95</s></data>
-							<data value="25% off">-25%</data>
+							<p>€52,45</p>
+							<p><s>€69,95</s></p>
+							<p>-25%</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -581,9 +585,9 @@
 					<a href="#">
 						<h2>SCRIPT SHIRT UNISEX - Overhemdblouse - skyway</h2>
 							<h3>BLKVIS</h3>
-							<data value="48,95">€48,95</data>
-							<data value="was 69,95"><s>€69,95</s></data>
-							<data value="30% off">-30%</data>
+							<p>€48,95</p>
+							<p><s>€69,95</s></p>
+							<p>-30%</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -605,7 +609,7 @@
 					<a href="#">
 						<h2>SCRIPT SHIRT UNISEX - Overhemdblouse - skyway</h2>
 							<h3>BLKVIS</h3>
-							<data value="79,95">€79,95</data>
+							<p>€79,95</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -625,7 +629,7 @@
 					<a href="#">
 						<h2>SOURCE RAGLAN HOODIE UNISEX - Hoodie - antique white</h2>
 							<h3>BLKVIS</h3>
-							<data value="89,95">€89,95</data>
+							<p>€89,95</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -645,7 +649,7 @@
 					<a href="#">
 						<h2>UNISEX - Overhemdblouse - hunter green</h2>
 							<h3>BLKVIS</h3>
-							<data value="79,95">€79,95</data>
+							<p>€79,95</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -679,9 +683,9 @@
 					<a href="#">
 						<h2>MAXIMO OVERSIZED FIT - Poloshirt - antique white</h2>
 						<h3>Redefined Rebel</h3>
-						<data value="76,95">€76,95</data>
-						<data value="was 109,95"><s>€109,95</s></data>
-						<data value="30% off">-30%</data>
+						<p>€76,95</p>
+						<p><s>€109,95</s></p>
+						<p>-30%</p>
 						<p>Premium Levering</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -703,7 +707,7 @@
 					<a href="#">
 						<h2>UNISEX - Broek - Black</h2>
 						<h3>YOURTURN</h3>
-						<data value="49,95">€49,95</data>
+						<p>€49,95</p>
 					<!--Svg rating sterren-->
 						<img src="images/detailpage_section_4_image_2.jpg" alt="Donker model op een witte achtergrond, gekleed in een groene bomberjack close up">
 					</a>
@@ -717,7 +721,7 @@
 					<a href="#">
 						<h2>GRAPHIC - Poloshirt - medium blue denim</h2>
 						<h3>Adidas Originals</h3>
-						<data value="74,95">€74,95</data>
+						<p>€74,95</p>
 						<p>Premium Levering</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -738,9 +742,9 @@
 					<a href="#">
 						<h2>BOWIE - Longsleeve - duffel bag</h2>
 						<h3>Les Deux</h3>
-						<data value="95,95">€95,95</data>
-						<data value="was 119,95"><s>€119,95</s></data>
-						<data value="20% off">-20%</data>
+						<p>€95,95</p>
+						<p><s>€119,95</s></p>
+						<p>-20%</p>
 						<p>Premium Levering</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -762,9 +766,9 @@
 					<a href="#">
 						<h2>STRAPBACK UNISEX - Pet - merlot</h2>
 						<h3>BLKVIS</h3>
-						<data value="23,95">€23,95</data>
-						<data value="was 39,95"><s>€39,95</s></data>
-						<data value="40% off">-40%</data>
+						<p>€23,95</p>
+						<p><s>€39,95</s></p>
+						<p>-40%</p>
 						<p>Premium Levering</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -786,9 +790,9 @@
 					<a href="#">
 						<h2>LUCAS BUTTONS UNISEX - Longsleeve - baby blue</h2>
 							<h3>Kaotiko</h3>
-							<data value="63,95">€63,95</data>
-							<data value="was 74,95"><s>€74,95</s></data>
-							<data value="15% off">-15%</data>
+							<p>€63,95</p>
+							<p><s>€74,95</s></p>
+							<p>-15%</p>
  							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -810,9 +814,9 @@
 					<a href="#">
 						<h2>UNISEX - T-shirt print - black/sail</h2>
 							<h3>Nike SB</h3>
-							<data value="57,95">€57,95</data>
-							<data value="was 77,95"><s>€77,95</s></data>
-							<data value="11% off">-11%</data>
+							<p>€57,95</p>
+							<p><s>€77,95</s></p>
+							<p>-11%</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -834,9 +838,9 @@
 					<a href="#">
 						<h2>BIG APPLE BEANIE UNISEX - Muts - black</h2>
 							<h3>BLKVIS</h3>
-							<data value="23,95">€23,95</data>
-							<data value="was 39,95"><s>€39,95</s></data>
-							<data value="40% off">-40%</data>
+							<p>€23,95</p>
+							<p><s>€39,95</s></p>
+							<p>-40%</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -858,7 +862,7 @@
 					<a href="#">
 						<h2>SCRIPT SHIRT - Overhemd - antique white</h2>
 							<h3>BLKVIS</h3>
-							<data value="69,95">€69,95</data>
+							<p>€69,95</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -878,9 +882,9 @@
 					<a href="#">
 						<h2>LOGO - Trainingsbroek - humus</h2>
 							<h3>BLKVIS</h3>
-							<data value="50,95">€50,95</data>
-							<data value="was 84,95"><s>€84,95</s></data>
-							<data value="40% off">-40%</data>
+							<p>€50,95</p>
+							<p><s>€84,95</s></p>
+							<p>-40%</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -902,7 +906,7 @@
 					<a href="#">
 						<h2>ALTO TROUSERS - Broek - brown</h2>
 							<h3>Heathe</h3>
-							<data value="159,95">€159,95</data>
+							<p>€159,95</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -923,9 +927,9 @@
 					<a href="#">
 						<h2>MONOGRAM COSTUS TROUSERS - Broek - multi colour</h2>
 							<h3>Heathe</h3>
-							<data value="134,95">€134,95</data>
-							<data value="was 149,95"><s>€149,95</s></data>
-							<data value="10% off">-10%</data>
+							<p>€134,95</p>
+							<p><s>€149,95</s></p>
+							<p>-10%</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -968,9 +972,9 @@
 					<a href="#">
 						<h2>WORKER - Shirt - washington</h2>
 						<h3>Levi's Workwear</h3>
-						<data value="59,95">€76,95</data>
-						<data value="was 84,95"><s>€84,95</s></data>
-						<data value="25% off">-25%</data>
+						<p>€76,95</p>
+						<p><s>€84,95</s></p>
+						<p>-25%</p>
 						<p>Premium Levering</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -999,7 +1003,7 @@
 					<a href="#">
 						<h2>JORCAMBRIDGE - Trui - ocean cavern/sea salt</h2>
 						<h3>Jack & Jones</h3>
-						<data value="39,99">€39,99</data>
+						<p>€39,99</p>
 					<!--Svg rating sterren-->
 						<img src="images/detailpage_section_5_image_2.jpg" alt="Donker model op een witte achtergrond, gekleed in een groene bomberjack close up">
 					</a>
@@ -1021,9 +1025,9 @@
 					<a href="#">
 						<h2>LESLEY - Overhemd - black</h2>
 						<h3>Les Deux</h3>
-						<data value="118,95">€118,95</data>
-						<data value="was 139,95"><s>€139,95</s></data>
-						<data value="15% off">-15%</data>
+						<p>€118,95</p>
+						<p><s>€139,95</s></p>
+						<p>-15%</p>
 						<p>Premium Levering</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -1053,9 +1057,9 @@
 					<a href="#">
 						<h2>Overhemd - chambray blue</h2>
 						<h3>Matinique</h3>
-						<data value="58,44">€95,95</data>
-						<data value="was 79,95"><s>€79,95</s></data>
-						<data value="27% off">-27%</data>
+						<p>€95,95</p>
+						<p><s>€79,95</s></p>
+						<p>-27%</p>
 						<p>Premium Levering</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -1085,9 +1089,9 @@
 					<a href="#">
 						<h2>REG FIT STRIPED - Overhemd - laurel green</h2>
 						<h3>Oscar Jacobson</h3>
-						<data value="125,30">€125,30</data>
-						<data value="was 179,00"><s>€179,00</s></data>
-						<data value="30% off">-30%</data>
+						<p>€125,30</p>
+						<p><s>€179,00</s></p>
+						<p>-30%</p>
 						<p>Premium Levering</p>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   							<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -1118,9 +1122,9 @@
 					<a href="#">
 						<h2>LUKAS - Overhemd - dark navy</h2>
 							<h3>Les Deux</h3>
-							<data value="111,95">€63,95</data>
-							<data value="was 139,95"><s>€139,95</s></data>
-							<data value="20% off">-20%</data>
+							<p>€63,95</p>
+							<p><s>€139,95</s></p>
+							<p>-20%</p>
  							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -1150,9 +1154,9 @@
 					<a href="#">
 						<h2>STAN - Shorts - allure</h2>
 							<h3>Les Deux</h3>
-							<data value="55,95">€57,95</data>
-							<data value="was 69,95"><s>€69,95</s></data>
-							<data value="20% off">-20%</data>
+							<p>€57,95</p>
+							<p><s>€69,95</s></p>
+							<p>-20%</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -1182,9 +1186,9 @@
 					<a href="#">
 						<h2>KONRAD STRIPE - Overhemd - allure</h2>
 							<h3>Les Deux</h3>
-							<data value="87,95">€87,95</data>
-							<data value="was 109,95"><s>€109,95</s></data>
-							<data value="20% off">-20%</data>
+							<p>€87,95</p>
+							<p><s>€109,95</s></p>
+							<p>-20%</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -1214,7 +1218,7 @@
 					<a href="#">
 						<h2>JAIDEN - Overhemd - multicolored</h2>
 							<h3>Les Deux</h3>
-							<data value="199,95">€199,95</data>
+							<p>€199,95</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -1243,9 +1247,9 @@
 					<a href="#">
 						<h2>KENT PRINTED STRIPE POPLIN - Overhemd - xenon blue</h2>
 							<h3>Les Deux</h3>
-							<data value="101,95">€101,95</data>
-							<data value="was 119,95"><s>€119,95</s></data>
-							<data value="15% off">-15%</data>
+							<p>€101,95</p>
+							<p><s>€119,95</s></p>
+							<p>-15%</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -1275,7 +1279,7 @@
 					<a href="#">
 						<h2>BERKLEY - Spijkerjas - brown</h2>
 							<h3>Levi's Workwear</h3>
-							<data value="129,95">€129,95</data>
+							<p>€129,95</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -1304,9 +1308,9 @@
 					<a href="#">
 						<h2>SCRIPT TEE UNISEX - T-shirt basic - black</h2>
 							<h3>BLKVIS</h3>
-							<data value="29,95">€29,95</data>
-							<data value="was 39,95"><s>€39,95</s></data>
-							<data value="25% off">-25%</data>
+							<p>€29,95</p>
+							<p><s>€39,95</s></p>
+							<p>-25%</p>
 							<p>Premium Levering</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="16" viewBox="0 0 35 16">
   								<rect width="34.056" height="14.167" x=".417" y=".917" rx="7.083"/>
@@ -1328,128 +1332,180 @@
 		</section>
     </main>
 
- <footer>
+<footer>
 		<ul>
 			<li>
 				<button>
 					<h2>Help & Contact</h2>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" role="img" aria-hidden="true">
-    					<path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c6.624-.008 11.992-5.376 12-12 0-6.627-5.373-12-12-12m0 22.5C6.201 22.5 1.5 17.799 1.5 12S6.201 1.5 12 1.5c5.796.007 10.493 4.704 10.5 10.5 0 5.799-4.701 10.5-10.5 10.5"></path>
-   						<circle cx="12" cy="5.6" r="1.1"></circle>
-    					<path d="M12 8.25a.75.75 0 0 0-.75.75v9.75a.75.75 0 1 0 1.5 0V9a.75.75 0 0 0-.75-.75"></path>
-  					</svg>
-
+						<svg height="24" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+							<path d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512 282.784 0 512.017-229.216 512.017-512C1024.017 229.232 794.785 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01 0-247.024 200.976-448 448-448s448.017 200.977 448.017 448S759.025 961.009 512 961.009zm-47.056-160.529h80.512v-81.248h-80.512zm46.112-576.944c-46.88 0-85.503 12.64-115.839 37.889-30.336 25.263-45.088 75.855-44.336 117.775l1.184 2.336h73.44c0-25.008 8.336-60.944 25.008-73.84 16.656-12.88 36.848-19.328 60.56-19.328 27.328 0 48.336 7.424 63.073 22.271 14.72 14.848 22.063 36.08 22.063 63.664 0 23.184-5.44 42.976-16.368 59.376-10.96 16.4-29.328 39.841-55.088 70.322-26.576 23.967-42.992 43.231-49.232 57.807-6.256 14.592-9.504 40.768-9.744 78.512h76.96c0-23.68 1.503-41.136 4.496-52.336 2.975-11.184 11.504-23.823 25.568-37.888 30.224-29.152 54.496-57.664 72.88-85.551 18.336-27.857 27.52-58.593 27.52-92.193 0-46.88-14.176-83.408-42.577-109.568-28.416-26.176-68.272-39.248-119.568-39.248z"/>
+						</svg>
 				</button>
-					<a>See all help topics</a>
-					<a>Refunds</a>
-					<a>delivery</a>
-					<a>Returns</a>
-					<a>Paying by invoice</a>
-					<a>Change password</a>
-					<a>Subscribe to newsletter</a>
-					<a>Report a vulnerability</a>
-					<a>Product safety</a>
+				<ul>
+					<li>
+						<a>See all help topics</a>
+						<a>Refunds</a>
+						<a>delivery</a>
+						<a>Returns</a>
+						<a>Paying by invoice</a>
+						<a>Change password</a>
+						<a>Subscribe to newsletter</a>
+						<a>Report a vulnerability</a>
+						<a>Product safety</a>
+					</li>
+				</ul>
 			</li>		
+
 			<li>
 				<button>
-					<h2>Giftcards</h2> <!--https://chatgpt.com/share/68cadc12-ebe0-800c-804e-4ffe68e9aba7 voor de  svg-->
-					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="34" viewBox="0 0 40 34"  stroke-width="2">
-  					<!-- Mask om het achtergrondvenster te verbergen waar het overlapt met het voorgrondvenster -->
- 						<mask id="mask1">
-    						<rect x="0" y="0" width="40" height="34"/>
-    						<rect x="2" y="10" width="28" height="20" rx="2" ry="2"/>
- 						</mask>
-  					<!-- Achtergrond venster -->
-  						<rect x="6" y="2" width="28" height="20" rx="2" ry="2" mask="url(#mask1)"/>
-  					<!-- Lijn op achtergrondvenster, zichtbaar boven voorgrondvenster -->
-  						<line x1="6" y1="6" x2="34" y2="6"  stroke-width="2"/>
-  					<!-- Voorgrond venster -->
-  						<rect x="2" y="10" width="28" height="20" rx="2" ry="2"/>
- 					<!-- Play-icoon gecentreerd in voorgrondvenster -->
-  						<polygon points="14,18 14,22 18,20"/> <!-- beter naar de css verplaatsen-->
+					<h2>Giftcards</h2>
+					<svg height="24" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+  						<path d="M44.5927283,0 C46.8851522,0 48.6044701,0.569457711 49.7506821,1.70837313 C50.8365671,2.78734564 51.4080855,4.36429961 51.4652373,6.43923503 L51.47,6.78966855 L51.47,30.6411564 C51.47,32.8897803 50.896894,34.5798986 49.7506821,35.7115116 C48.6647971,36.7835659 47.0645455,37.347805 44.9499273,37.4042289 L44.5927283,37.4089309 L6.87727167,37.4089309 C4.58484778,37.4089309 2.86552986,36.8431245 1.71931792,35.7115116 C0.633432917,34.6394572 0.0619144957,33.0661404 0.00476265351,30.991561 L0,30.6411564 L0,6.78966855 C0,4.52646065 0.573105973,2.82904725 1.71931792,1.69742835 C2.80520292,0.62536834 4.4054545,0.0611262287 6.52007266,0.00470201759 L6.87727167,0 L44.5927283,0 Z M3.52623896,30.4440382 C3.52623896,31.5829506 3.81826434,32.4407854 4.4023151,33.0175427 C4.94146648,33.549934 5.69833296,33.8366062 6.67291454,33.8775594 L6.92109567,33.8826785 L24.3990187,33.882 L24.3990187,22.2745195 L24.245702,22.2745195 C23.8806665,23.3988418 23.3075605,24.4720437 22.5263841,25.494125 C21.7452076,26.5162363 20.8545234,27.4361364 19.8543317,28.2538254 C18.85411,29.0715144 17.8393102,29.739529 16.8099323,30.2578692 C15.7805245,30.7762214 14.8496796,31.1011035 14.0173976,31.2325157 C13.3895378,31.3201248 12.8967384,31.1814116 12.5389995,30.8163762 C12.1812605,30.4513377 12.0023911,30.0278882 12.0023911,29.5460276 C12.0023911,29.020379 12.1557078,28.5932931 12.4623411,28.2647702 C12.7306453,27.9773126 13.0939641,27.7932607 13.5522975,27.7126144 L13.7545433,27.6843827 C14.5138303,27.5967646 15.3242227,27.315684 16.1857208,26.8411409 C17.0471889,26.3665978 17.8831192,25.7825321 18.6935117,25.0889438 C19.5038743,24.3953853 20.2266487,23.6653144 20.8618349,22.898731 C21.4175967,22.2279705 21.8531822,21.5935445 22.1685914,20.9954529 L22.296409,20.7413526 L3.526,20.741 L3.52623896,30.4440382 Z M47.943,20.741 L29.1736807,20.7413526 C29.494937,21.4130214 29.9731433,22.1321475 30.6082997,22.898731 C31.243456,23.6653144 31.9662304,24.3953853 32.7766229,25.0889438 C33.5869854,25.7825321 34.4192675,26.3665978 35.273469,26.8411409 C36.0327327,27.262957 36.754511,27.5319138 37.438804,27.6480114 L37.6936568,27.6843827 C38.2631145,27.7427847 38.7011601,27.9362473 39.0077934,28.2647702 C39.3142773,28.5932931 39.4675192,29.020379 39.4675192,29.5460276 C39.4675192,30.0278882 39.2887245,30.4513377 38.9311351,30.8163762 C38.5733961,31.1814116 38.0805968,31.3201248 37.452737,31.2325157 C36.605832,31.1011035 35.6713388,30.7762214 34.6492575,30.2578692 C33.6271462,29.739529 32.6159947,29.0715144 31.6158029,28.2538254 C30.6155812,27.4361364 29.7248821,26.5162363 28.9437057,25.494125 C28.2493266,24.5856083 27.7193489,23.6367 27.3537725,22.6474002 L27.2243877,22.2745195 L27.049,22.2745195 L27.049,33.882 L44.5492183,33.8826785 C45.629642,33.8826785 46.4654526,33.5942999 47.0566504,33.0175427 C47.6026474,32.4851514 47.8966459,31.713262 47.9386456,30.7018746 L47.9438956,30.4440382 L47.943,20.741 Z M44.7942046,3.53142311 L44.5492183,3.52623896 L27.049,3.526 L27.049,11.0387118 C27.5310211,10.1042186 28.1187351,9.29748938 28.8123234,8.61852402 C29.5058818,7.93955866 30.268802,7.41755825 31.1010841,7.05252279 C31.9333661,6.68748732 32.8021607,6.50496959 33.7074678,6.50496959 C35.2844138,6.50496959 36.5948872,7.02697 37.638888,8.07097082 C38.6828888,9.11497164 39.2048893,10.4400531 39.2048893,12.0462151 C39.2048893,12.9660853 39.0077785,13.8239201 38.6135569,14.6197196 C38.2193055,15.4154891 37.6680891,16.1273037 36.9599077,16.7551635 C36.3402752,17.3045409 35.6339962,17.7756628 34.8410708,18.1685293 L34.4959408,18.3321096 L47.943,18.3321096 L47.9438956,6.98680923 C47.9438956,5.8478938 47.6481472,4.98641071 47.0566504,4.40235996 C46.5109294,3.86320858 45.7567808,3.5728963 44.7942046,3.53142311 Z M24.3990187,3.526 L6.92109567,3.52623896 C5.82598928,3.52623896 4.98639576,3.8182793 4.4023151,4.40235996 C3.86319132,4.94148373 3.57289391,5.71699955 3.53142285,6.72890742 L3.52623896,6.98680923 L3.526,18.3321096 L16.9522594,18.3321096 C16.0323891,17.908672 15.2183634,17.3830233 14.510182,16.7551635 C13.8020006,16.1273037 13.2471509,15.4154891 12.8456329,14.6197196 C12.4440849,13.8239201 12.2433109,12.9660853 12.2433109,12.0462151 C12.2433109,10.4400531 12.7689596,9.11497164 13.8202569,8.07097082 C14.8715543,7.02697 16.1783944,6.50496959 17.7407772,6.50496959 C18.6606475,6.50496959 19.5367236,6.68748732 20.3690056,7.05252279 C21.2012877,7.41755825 21.9642229,7.93955866 22.6578112,8.61852402 C23.2646748,9.21261871 23.7849034,9.90453264 24.218497,10.6942658 L24.3990187,11.0387118 L24.3990187,3.526 Z M17.9159835,9.61503763 C17.1275105,9.61503763 16.4996507,9.85232414 16.0324041,10.3268972 C15.5651575,10.8014403 15.3315342,11.4548528 15.3315342,12.2871349 C15.3315342,12.9733968 15.543253,13.6560104 15.9666905,14.3349757 C16.3901281,15.0139411 16.9741788,15.6272079 17.7188428,16.174776 C18.4635367,16.7223142 19.3177232,17.164008 20.2814025,17.4998574 C21.124648,17.7936994 22.0126076,17.9589856 22.9452814,17.9957158 L23.3477363,18.0035866 L24.0047822,18.0035866 L24.0047822,17.3903199 C24.0047822,16.3390225 23.8441689,15.3461273 23.5229425,14.4116341 C23.2017161,13.4771409 22.756374,12.6485071 22.1869163,11.9257327 C21.6174586,11.2029583 20.9676943,10.6371489 20.2376234,10.2283044 C19.5075525,9.81945988 18.7336725,9.61503763 17.9159835,9.61503763 Z M33.5322167,9.61503763 C32.7291506,9.61503763 31.9625821,9.81945988 31.2325112,10.2283044 C30.5024403,10.6371489 29.852676,11.2029583 29.2832182,11.9257327 C28.7137605,12.6485071 28.2647553,13.4771409 27.9362024,14.4116341 C27.6487448,15.2293156 27.4870499,16.0917112 27.4511177,16.998821 L27.443418,17.3903199 L27.443418,18.0035866 L28.1005087,18.0035866 C29.1956151,18.0035866 30.2250079,17.8356769 31.1886872,17.4998574 C32.1523964,17.164008 33.0029347,16.7223142 33.7403021,16.174776 C34.4776696,15.6272079 35.0580721,15.0139411 35.4815096,14.3349757 C35.9049771,13.6560104 36.1167108,12.9733968 36.1167108,12.2871349 C36.1167108,11.4548528 35.8867357,10.8014403 35.4267857,10.3268972 C34.9668356,9.85232414 34.3353126,9.61503763 33.5322167,9.61503763 Z" transform="translate(2 9)"/>
 					</svg>
 				</button>
-					<a>Buy giftcards</a>
-					<a>Redeem a giftcard</a>
-					<a>Redeem a voucher</a>
-					<a>Vouchers terms & conditions</a>
+				<ul>
+					<li>
+						<a>Buy giftcards</a>
+					</li>
+					<li>
+						<a>Redeem a giftcard</a>
+					</li>
+					<li>
+						<a>Redeem a voucher</a>
+					</li>
+					<li>
+						<a>Vouchers terms & conditions</a>
+					</li>
+				</ul>
 			</li>
+
 			<li>
 				<button>
 					<h2>Zalando</h2>
-					<!--Svg van Zalando logo-->
+					<svg viewBox="0 0 24 24" width="2em" height="2em" stroke-width='1.5' xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  					<g transform="translate(1.5, 1.5) scale(0.87)">
+   						<path d="M21.803 9.411c-1.69-2.11-4.056-4.157-7.152-6.004l-.012-.006C11.518 1.598 8.591.539 5.95.105 4.299-.166 3.512.15 3.153.36c-.358.21-1.021.746-1.615 2.334C.588 5.238.025 8.343 0 11.994v.013c.025 3.65.587 6.755 1.538 9.299.594 1.588 1.257 2.124 1.615 2.334s1.147.526 2.796.255c2.642-.434 5.569-1.493 8.69-3.295l.012-.007c3.096-1.847 5.461-3.895 7.152-6.004 1.056-1.317 1.181-2.168 1.181-2.59 0-.42-.125-1.271-1.18-2.588" />
+ 					</g>
+					</svg>
 				</button>
-				<a>Visit our corporate website</a>
-				<a>zalando careers</a>
-				<a>Newsroom</a>
-				<a>Blog</a>
+				<ul>
+					<li>
+						<a>Visit our corporate website</a>
+					</li>
+					<li>
+						<a>zalando careers</a>
+					</li>
+					<li>
+						<a>Newsroom</a>
+					</li>
+					<li>
+						<a>Blog</a>
+					</li>
+				</ul>
 			</li>
 			<li>
 				<button>
 					<h2>Our Partners</h2>
-					<svg viewBox="0 0 24 24" width="2em" height="2em" class="zds-icon RC794g X9n9TI DlJ4rT _5Yd-hZ HlZ_Tf I_qHp3" focusable="false" aria-hidden="true" aria-label="">
-                        <path d="m23.807 11.497-3.365-3.735a.75.75 0 0 0-.557-.247H16.51V4.5a.75.75 0 0 0-.75-.75H3.007a.75.75 0 0 0-.75.75v12.008c0 .414.336.75.75.75h1.467a2.999 2.999 0 0 0 5.997 0h6.035a2.999 2.999 0 0 0 5.997 0h.746a.75.75 0 0 0 .75-.75V12a.75.75 0 0 0-.193-.503M19.55 9.015l2.949 3.274v3.468h-.408c-.519-.896-1.477-1.506-2.587-1.506s-2.068.61-2.587 1.506h-.404v-.96l-.002-5.782zM3.758 5.25H15.01l.001 3.01v.005l.003 7.492H10.06c-.518-.896-1.476-1.506-2.586-1.506s-2.068.61-2.587 1.506H3.758zm3.716 13.5a1.5 1.5 0 1 1 0-2.998 1.5 1.5 0 0 1 0 2.998m12.031 0a1.5 1.5 0 1 1 0-2.998 1.5 1.5 0 0 1 0 2.998"></path>
-			        </svg>
+					<svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 0 28 28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  						<path d="M10 17h4V5H2v12h3m15 0h2v-3.34a4 4 0 00-1.17-2.83L19 9h-5v8h1" />
+  						<circle cx="7.5" cy="17.5" r="2.5" />
+ 						<circle cx="17.5" cy="17.5" r="2.5" />
+					</svg>
 				</button>
-				<a>
-					<img src="svg/Postnl.svg">
-				</a>
-				<a>
-					<img src="svg/DHL.svg">
-				</a>
+				<ul>
+					<li>
+						<a>
+							<img src="svg/Postnl.svg">
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="svg/DHL.svg">
+						</a>
+					</li>
+				</ul>
+				
+				
 			</li>
 			<li>
 				<button>
 					<h2>Our payment methods</h2>
-					<!--Svg van Pinpas-->
+					<svg height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path stroke-width="2" d="M22 3c.53 0 1.039.211 1.414.586s.586.884.586 1.414v14c0 .53-.211 1.039-.586 1.414s-.884.586-1.414.586h-20c-.53 0-1.039-.211-1.414-.586s-.586-.884-.586-1.414v-14c0-.53.211-1.039.586-1.414s.884-.586 1.414-.586h20zm1 8h-22v8c0 .552.448 1 1 1h20c.552 0 1-.448 1-1v-8zm-15 5v1h-5v-1h5zm13-2v1h-3v-1h3zm-10 0v1h-8v-1h8zm-10-6v2h22v-2h-22zm22-1v-2c0-.552-.448-1-1-1h-20c-.552 0-1 .448-1 1v2h22z"/>
+					</svg>
 				</button>
-				<a>
-					<img src="svg/Postnl.svg">
-				</a>
-				<a>
-					<img src="svg/DHL.svg">
-				</a>
+				<ul>
+					<li>
+						<a>
+							<img src="svg/Postnl.svg">
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="svg/DHL.svg">
+						</a>
+					</li>
+				</ul>
 			</li>
-			<li>
-				<button>
-					<h2>Our payment methods</h2>
-					<!--Svg van Pinpas-->
-				</button>
-				<a>
-					<img src="svg/Postnl.svg">
-				</a>
-				<a>
-					<img src="svg/DHL.svg">
-				</a>
-			</li>
+
 			<li>
 				<button>
 					<h2>Our promises</h2>
-					<!--Svg van Winkeltas-->
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24">
+						<path d="M20.753 15.467c1.301 1.821.939 3.104 2.247 4.938l-5.041 3.595c-2.723-2.027-5.072-2.677-5.83-2.932-.723-.243-1.189-.706-1.029-1.289.164-.589.779-.764 1.286-.741.765.035 1.386.265 1.386.265l-3.516-4.93c-.314-.44-.211-1.051.229-1.365s1.05-.211 1.363.229l2.383 3.333c.114.161.338.199.498.084.162-.115.199-.339.085-.5l-.587-.823.944-.235c.248-.06.507.036.655.244l.48.673c.115.161.338.199.499.084s.197-.338.083-.5l-.555-.777.928-.208c.243-.052.495.045.64.247l.407.572c.114.161.339.198.5.084.16-.115.198-.339.084-.5l-.458-.641.273-.048c.952-.167 1.468.329 2.046 1.141zm-10.838-3.248c.61-.436 1.399-.45 1.987.002-.335-1.121-1.676-1.583-2.63-.902-.955.681-.952 2.099-.002 2.779-.235-.703.035-1.444.645-1.879zm1.577 10.745c-.682-.229-1.188-.571-1.569-.964h-6.923v-14h3v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h3v4.6c.541-.098 1.486-.294 2-.302v-6.298h-5v-2c0-2.209-1.791-4-4-4s-4 1.791-4 4v2h-5v18h13.134c-1-.49-1.683-.723-2.642-1.036zm-4.492-18.964c0-1.654 1.346-3 3-3s3 1.346 3 3v2h-6v-2z"/>
+					</svg>
 				</button>
-				<p>Free standard delivery for orders over €25,-</p>
-				<p>30-day return policy</p>
-				<p>Free returns</p>
+				<ul>
+					<li>
+						<p>Free standard delivery for orders over €25,-</p>
+					</li>
+					<li>
+						<p>30-day return policy</p>
+					</li>
+					<li>
+						<p>Free returns</p>
+					</li>
+				</ul>
 			</li>
 			<li>
 				<button>
 					<h2>Safe Shopping</h2>
-					<!--Svg van Winkeltas-->
+					<svg viewBox="0 0 24 24" width="2em" height="2em" stroke-width='1.5' xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  					<g transform="translate(1.5, 1.5) scale(0.87)">
+   						<path d="M21.803 9.411c-1.69-2.11-4.056-4.157-7.152-6.004l-.012-.006C11.518 1.598 8.591.539 5.95.105 4.299-.166 3.512.15 3.153.36c-.358.21-1.021.746-1.615 2.334C.588 5.238.025 8.343 0 11.994v.013c.025 3.65.587 6.755 1.538 9.299.594 1.588 1.257 2.124 1.615 2.334s1.147.526 2.796.255c2.642-.434 5.569-1.493 8.69-3.295l.012-.007c3.096-1.847 5.461-3.895 7.152-6.004 1.056-1.317 1.181-2.168 1.181-2.59 0-.42-.125-1.271-1.18-2.588" />
+ 					</g>
+					</svg>
 				</button>
-				<a>Tech blog</a>
-				<a>Imprint</a>
-				<a>Terms & Conditions</a>
-				<a>Privacy notice</a>
-				<a>Data preferences</a>
-				<a>Community guidelines</a>
 			</li>
 		</ul>
-		<h2>Zalando app</h2>
-		<h3>Find us on:</h3>
-		<img src="svg/googleplaystore.svg">
-		<img src="svg/appleappstore.svg">
+		<section>
+			<a>Tech blog</a>
+			<a>Imprint</a>
+			<a>Terms & Conditions</a>
+			<a>Privacy notice</a>
+			<a>Data preferences</a>
+			<a>Community guidelines</a>
+			<h2>Zalando app</h2>
+			<h3>Find us on:</h3>
+			<img src="svg/googleplaystore.svg">
+			<img src="svg/appleappstore.svg">
+			<svg viewBox="0 0 24 24" height='24' xmlns="http://www.w3.org/2000/svg">
+				<path d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z"/>
+			</svg>
+			<svg viewBox="0 0 24 24" height='24' xmlns="http://www.w3.org/2000/svg">
+				<path d="M23 12.0672C23 5.95496 18.0751 1 12 1C5.92486 1 1 5.95496 1 12.0672C1 17.5912 5.02254 22.1697 10.2812 23V15.2663H7.48828V12.0672H10.2812V9.62898C10.2812 6.85525 11.9235 5.32313 14.4361 5.32313C15.6396 5.32313 16.8984 5.53929 16.8984 5.53929V8.26287H15.5114C14.1449 8.26287 13.7188 9.11597 13.7188 9.99119V12.0672H16.7695L16.2818 15.2663H13.7188V23C18.9775 22.1697 23 17.5912 23 12.0672Z"/>
+			</svg>
+			<svg height="26" viewBox="-2 -5 24 24" xmlns="http://www.w3.org/2000/svg">
+				<path d='M15.812.017H4.145C1.855.017 0 1.852 0 4.116v5.768c0 2.264 1.856 4.1 4.145 4.1h11.667c2.29 0 4.145-1.836 4.145-4.1V4.116c0-2.264-1.856-4.1-4.145-4.1zM13.009 7.28L7.552 9.855a.219.219 0 0 1-.314-.196V4.35c0-.161.173-.266.318-.193l5.458 2.735a.216.216 0 0 1-.005.389z' />
+			</svg>
+			<svg viewBox="0 0 64 64" height='26'xmlns="http://www.w3.org/2000/svg">
+				<path d="M17.6 56s19.2-28.8 14.78-36.32c-2.12-3.61-10-2.08-4.91 15.64 3.82 13.35 23.73 5.31 23.73-8.12a19.2 19.2 0 1 0-32.78 13.58"/>
+			</svg>
+		</section>
 	</footer>
 
 	<script defer src="scripts/script.js"></script>
-
 </body>
+	
+	
+</html>
