@@ -32,7 +32,10 @@ main section:nth-child(1) p:nth-of-type(1){
 
     padding: 2em;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     padding: 2em;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     font-size: 14px;
@@ -54,7 +57,10 @@ main section:nth-child(1) a:first-of-type{
 
     padding: 1em 0em 0em 1.5em;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     padding: 1em 0em 0em 1.5em;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     font-size: 1.5em;
@@ -68,7 +74,10 @@ main section:nth-child(1) p:nth-of-type(2){
     font-size: 1.5em;
     padding-left: 1.5em;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     padding-left: 1.5em;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 }
@@ -79,7 +88,10 @@ main section:nth-child(1) p:nth-of-type(3){
 
     padding: 0em 0em 0em -0.8em;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     padding: 0em 0em 0em -0.8em;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     color: var(--color-border);
@@ -93,7 +105,10 @@ main section:nth-child(1) p:nth-of-type(4){
 
     padding: 3em 0em 3em 2.3em;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     padding: 3em 0em 3em 2.3em;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 }
@@ -112,6 +127,7 @@ main section:nth-child(1) article{
     align-items: center;
     justify-content: space-evenly;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     justify-content: space-evenly;
     padding: 0.8em 1em 0.8em 1em;
     margin: 0em 2em 0em 2em; 
@@ -119,6 +135,12 @@ main section:nth-child(1) article{
     background-color: var(--color-background-2);
     column-gap: 1em 1em;
     column-gap: 1em 1em;
+=======
+    padding: 0.8em 1em 0.8em 1em;
+    margin: 0em 2em 0em 2em; 
+    background-color: var(--color-background-2);
+    column-gap: 1em 1em;
+>>>>>>> Stashed changes
 =======
     padding: 0.8em 1em 0.8em 1em;
     margin: 0em 2em 0em 2em; 
@@ -197,7 +219,10 @@ main section:nth-child(2){
     margin: 1.5em;
     overflow: visible;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     overflow: visible;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 }
@@ -218,6 +243,7 @@ main section:nth-child(2) article{
     display: grid;
     background: var(--color-text);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     font-family: sans-serif;
     padding-bottom: 1em;
 }
@@ -227,6 +253,8 @@ main section:nth-child(2) article{
     
     display: grid;
     background: var(--color-text);
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     padding: 1em;
@@ -536,6 +564,7 @@ main section:nth-child(5) ul li:last-of-type button + p, main section:nth-child(
     color: var(--color-text);
 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
     margin: 0 -3.04em; 
     
@@ -841,5 +870,7 @@ main section:nth-child(5) ul li:last-of-type button + p, main section:nth-child(
     background-color: var(--color-background);
     color: var(--color-text);
 }
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
