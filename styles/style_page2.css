@@ -1,7 +1,6 @@
 /**********************/
 /******Section 1******/
 /*********************/
-
 main section:nth-child(1){
     display: grid;
     gap:0.5em;
@@ -90,11 +89,10 @@ main section:nth-child(1) article{
     grid-column: 1 / span 3;
 
     display: flex;
-    justify-items: space-evenly;
     align-items: center;
     justify-content: space-evenly;
     padding: 0.8em 1em 0.8em 1em;
-    margin: 0em 2em 0em 2em;
+    margin: 0em 2em 0em 2em; 
     background-color: var(--color-background-2);
     column-gap: 1em 1em;
 }
@@ -107,7 +105,6 @@ main section:nth-child(1) article svg:nth-of-type(1){
     width: 40px;
     stroke-linecap: round;
     stroke-linejoin: round;
-    margin: 0em;
     order: 1;
 }
 
