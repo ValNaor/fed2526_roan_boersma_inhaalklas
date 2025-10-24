@@ -44,8 +44,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/homepagina_mobile.png" alt="Homepagina mobile device">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Detail pagina voor item: STRIPED JACKET UNISEX - Denim jacket - white van BLKVIS. recommended items kunnen mogelijk overtijd aangepast worden. In dat geval zal ik een ander item als vervanging gebruiken.  
-  <img src="readme-images/detailpagina_blkvis_item.png"  alt="Detail pagina voor item: STRIPED JACKET UNISEX - Denim jacket - white van BLKVIS.">
+  Detail pagina voor item: STRIPED JACKET Unisex - Denim jacket - white van Blkvis. recommended items kunnen mogelijk overtijd aangepast worden. In dat geval zal ik een ander item als vervanging gebruiken.  
+  <img src="readme-images/detailpagina_Blkvis_item.png"  alt="Detail pagina voor item: STRIPED JACKET Unisex - Denim jacket - white van Blkvis.">
  
 </details>
 
@@ -89,7 +89,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   ### Zoekfunctie is toegankelijk
   - De zoekbalk is goed bereikbaar met het toetsenbord en de screenreader leest de zoekresultaten duidelijk voor.
-  <img src="readme-images/narrator_test_readme_image_1"  alt="Screenreader op de searchbalk met BLKVIS ingevuld in de searchbar">
+  <img src="readme-images/narrator_test_readme_image_1"  alt="Screenreader op de searchbalk met Blkvis ingevuld in de searchbar">
   - Filteropties zijn aanwezig en worden correct voorgelezen, hoewel ze soms wat uitgebreid zijn dit kan goed of slecht zijn.
 
   ### Algemene structuur en opmaak zijn overzichtelijk
