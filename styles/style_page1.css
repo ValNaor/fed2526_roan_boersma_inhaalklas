@@ -1,5 +1,7 @@
 
-
+p{
+  padding-left: 2;
+}
 li:first-of-type{
 	flex-grow: 3;
 }
@@ -60,7 +62,7 @@ main section:nth-child(1) ul {
 main section:nth-child(1) ul li {
   flex: none;
   overflow: hidden;
-  max-width: inherit;
+  flex: 0 0 50%;
 }
 
 

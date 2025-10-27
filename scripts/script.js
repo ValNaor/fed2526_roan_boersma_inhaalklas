@@ -40,7 +40,7 @@ if (window.location.pathname.endsWith('detail.html')) {
 document.querySelectorAll('main section:nth-child(5) ul li a, main section:nth-child(4) ul li a, main section:nth-child(6) ul li a, main section:nth-child(7) ul li a').forEach(a => {
   const ps = a.querySelectorAll('p');
 
-  if (ps.length > 2) {
+  if (ps.length > 3) {
     const deal = getComputedStyle(document.documentElement)
                     .getPropertyValue('--color-deal-label');
 
@@ -54,7 +54,7 @@ document.querySelectorAll('main section:nth-child(5) ul li a, main section:nth-c
 
 
 // Labels
-document.querySelectorAll('main section:nth-child(4) ul li, main section:nth-child(5) ul li, main section:nth-child(6) ul li, main section:nth-child(7) ul li a')
+document.querySelectorAll('main section:nth-child(4) ul li, main section:nth-child(5) ul li, main section:nth-child(6) ul li, main section:nth-child(7) ul li')
   .forEach(li => {
     li.style.position = 'relative';
 
