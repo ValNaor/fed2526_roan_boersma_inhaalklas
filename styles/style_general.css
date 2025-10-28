@@ -316,7 +316,7 @@
 
 *{
 	padding: 0;
-	margin: 0;
+	padding: 0;
 	scrollbar-width: none;
 }
 
@@ -334,6 +334,7 @@ h3, h4, p, a {
 	order: 2;
 	text-decoration: none;
   color: var(--color-text);
+  
 }
 
 svg{
@@ -485,7 +486,7 @@ footer ul li button svg{
     grid-row: 1;
     stroke: var(--color-text);
     fill: var(--color-background-2);
-    margin-left: 1em;
+    padding-left: 1em;
 }
 
 footer ul li button{
@@ -532,14 +533,14 @@ footer section a:last-of-type{
 
 footer section h2{
  order: 2;
- margin: 2em 0em 0em 0em;
+ padding: 2em 0em 0em 0em;
  padding: 0;
  flex-basis: 100%;
 }
 
 footer section h3{
   order: 5;
-  margin: 1em 0em 0em 0em;
+  padding: 1em 0em 0em 0em;
   flex-basis: 100%;
 }
 
