@@ -39,7 +39,11 @@ main section:nth-child(1) h3{
 	font-family: sans-serif, Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	font-weight: 700;
+  white-space: wrap;
+  padding:1em 1em 0em 1em;
+  text-transform: none;
 }
+
 main section:nth-child(1) button{
 	grid-row: 1;
 	grid-column: 3;
@@ -60,7 +64,6 @@ main section:nth-child(1) ul {
 }
 
 main section:nth-child(1) ul li {
-  flex: none;
   overflow: hidden;
   flex: 0 0 50%;
 }
@@ -69,7 +72,8 @@ main section:nth-child(1) ul li {
 
 main section:nth-child(1) ul li a {
   display: grid;
-  max-width: 50dvw;
+  width: 100%;
+  height: 100%;   
   grid-template-rows: auto auto 1fr;
   grid-template-columns:1fr 1fr;
   background-color: var(--color-background-2);
@@ -182,7 +186,8 @@ main section:nth-child(3) p{
 	grid-row: 3;
 	grid-column: span 3;
 	padding-top: 1em;
-	font-weight: 200;
+  padding-left: 2.3em;
+	font-weight: 400;
 	
 }
 
@@ -236,7 +241,7 @@ main section:nth-child(4) h3{
 main section:nth-child(4) p{
 	order: 4;
 	grid-column: span 4;
-	padding: 1em 1em 2em 0em;
+	padding: 1em 1em 2em 2.3em;
 	font-weight: 400;
 
 }
@@ -309,6 +314,7 @@ main section:nth-child(5) p{
 	order: 2;
 	grid-row: 6;
 	grid-column: span 3 ;
+  padding-left: 2.3em;
 }
 
 main section:nth-child(6){
@@ -371,10 +377,6 @@ main section:nth-child(6) a svg{
 
 main section:nth-child(7){
   display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows:auto auto 1fr;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 main section:nth-child(7) ul{
@@ -414,9 +416,8 @@ main section:nth-child(7) ul li h2{
 
 main section:nth-child(7) ul li a img{
   grid-row: 1;
-  grid-column: 1 / span 4;    
-  max-height: 270px;  
-  max-width: fit-content;   
+  grid-column: 1 / span 3;    
+  width: 100%;
 }
 
 main section:nth-child(7) ul li a h3{
@@ -424,7 +425,7 @@ main section:nth-child(7) ul li a h3{
   grid-column: 1 / span 3;
   padding: 0em;
   font-size: 1em;
-  overflow-x: hidden;
+  word-break: normal;
 }
 
 main section:nth-child(7) ul li button{
@@ -433,7 +434,6 @@ main section:nth-child(7) ul li button{
   right: 0;
   z-index: 1;
   padding: 0.5em 0.7em 0.5em 0.7em;
-  background-color: var(--color-background);
 }
 
 main section:nth-child(7) ul li p{
@@ -441,46 +441,85 @@ main section:nth-child(7) ul li p{
   grid-column: span 3;
 }
 
-main section:nth-child(7) ul li p:has(:nth-child(5)){
+main section:nth-child(7) ul li p:has(svg:nth-child(-n+5)){
   grid-row: 4;
   grid-column: 1 / span 3;
 }
 
+main section:nth-child(7) ul li p:has(:nth-child(5)) svg{
+  width: 12px;
+
+}
+
 main section:nth-child(7) ul li p:nth-of-type(1){
   grid-row: 5;
-  grid-column: 1  ;
+  grid-column: 1;
+}
+
+main section:nth-child(7) ul li p:nth-of-type(3):not(:has(svg)){
+  grid-row: 6;
+  grid-column: 3 / 4;
 }
 
 
-main section:nth-child(7) ul li p:nth-child(n+8){
-  background-color: var(--color-deal-label);
-  color: var(--color-background);
-  position: absolute;
-  top: 17em;
-  padding: 0.2em 0.5em 0.2em 0.5em;
-  font-family: sans-serif;
-  font-weight:bolder;
-  font-size: 14px;
-} 
+main section:nth-child(7) ul li a p:nth-child(4):has(svg){
+  grid-row: 4;
+}
 
+main section:nth-child(7) ul li p:nth-of-type(2){
+  grid-row: 6;     
+  grid-column: 1 / span 3;
+
+}
+
+main section:nth-child(7) ul li del{
+  color: var(--color-text);
+}
 
 main section:nth-child(7) ul li a svg:only-of-type{
   grid-row: 7;
   grid-column: 1;
+
+  width: 2.5em;
   justify-self: start;
-  stroke: var(--color-text);
+  stroke: var(--color-background);
   fill: var(--color-background);
 }
 
-main section:nth-child(7) ul li a p{
+main section:nth-child(7) ul li:nth-child(-n+2) a svg:only-of-type, main section:nth-child(7) ul li:nth-last-child(-n+2) a svg:only-of-type {
   grid-row: 7;
+  grid-column: 1;
+
+  width: 2.5em;
+  justify-self: start;
+  stroke: var(--color-background);
+  fill: var(--color-background);
 }
-main section:nth-child(7) ul li p:has(s){
-  grid-row: 6 ;
-  grid-column: span 3;
-  font-size: 12px;
-  font-weight: bold;
-} 
+
+main section:nth-child(7) ul li a svg:only-of-type path{
+  stroke: var(--color-text);
+  stroke-width: 0.2px;
+}
+
+main section:nth-child(7) ul li a p:nth-of-type(1){
+  grid-row: 5;
+}
+
+main section:nth-child(7) ul li a:not(:has(p:nth-of-type(4))) p:nth-of-type(1){
+  grid-row: 6;
+}
+
+main section:nth-child(7) ul li p:last-of-type{
+  grid-row: 7;
+  grid-column: 2 / 4;
+  white-space: nowrap;
+}
+
+main section:nth-child(7) ul li a:not(:has(p:nth-of-type(4))) p:last-of-type {
+  grid-row: 7;
+  grid-column: 2 / 3;
+  white-space: nowrap;
+}
 
 main section:nth-child(8){
   display: grid;
@@ -503,7 +542,7 @@ main section:nth-child(8) h3 {
 main section:nth-child(8) p {
     order: 4;
     grid-column: span 4;
-    padding: 1em 0em 0.5em 0em;
+    padding: 1em 0em 0.5em 2.3em;
 }
 
 main section:nth-child(8) a {
@@ -631,6 +670,6 @@ body main p:nth-last-child(1){
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 2em;
-  margin: 1em 0em 1em 1em;
+  padding: 1em 0em 1em 1em;
 }
 

@@ -449,7 +449,6 @@ main{
 
 main section:nth-child(1) {
 	display: grid;
-	emptys: repeat(3, 1fr);
 	grid-template-rows:auto auto 1fr;
 	justify-items: start;
 }
@@ -507,7 +506,6 @@ main section:nth-child(1) ul li a {
   display: grid;
   max-width: 50dvw;
   grid-template-rows: auto auto 1fr;
-  emptys:1fr 1fr;
   background-color: var(--color-background-2);
 }
 
@@ -564,8 +562,7 @@ main section:nth-child(3){
   padding-top: 2em;
 	display: grid;
 	grid-template-rows: auto auto auto auto 1fr auto;
-	emptys: 1fr 1fr 1fr;
-	
+
 }
 
 main section:nth-child(3) ul{
@@ -644,7 +641,6 @@ main section:nth-child(3) svg{
 main section:nth-child(4){
 	display: grid;
 	grid-template-rows: auto auto auto auto 1fr;
-	emptys: 1fr 1fr 1fr 1fr;
 	background-color: var(--color-background-2);
 	padding-top: 4em;
 	padding-bottom: 3em;
@@ -687,7 +683,7 @@ main section:nth-child(4) img{
 main section:nth-child(5){
   display: grid;
   grid-template-rows: 1fr auto auto auto auto;
-  emptys: 1fr 1fr 1fr 1fr;
+  padding: 1fr 1fr 1fr 1fr;
   background-color: var(--color-background-2);
   padding-bottom: 3em;
 }
@@ -750,7 +746,6 @@ main section:nth-child(5) p{
 main section:nth-child(6){
   display: grid;
   grid-template-rows: 1fr auto auto auto auto;
-  emptys: 1fr 1fr 1fr 1fr;
   background-color: var(--color-background-2);
   padding-bottom: 3em;
 }
@@ -807,7 +802,6 @@ main section:nth-child(6) a svg{
 
 main section:nth-child(7){
   display: grid;
-	emptys: repeat(3, 1fr);
 	grid-template-rows:auto auto 1fr;
 	justify-items: start;
 }
@@ -834,7 +828,6 @@ main section:nth-child(7) ul li a {
   display: grid;
   max-width: 50dvw;
   grid-template-rows: auto auto 1fr;
-  emptys:1fr 1fr;
   background-color: var(--color-background-2);
 } 
 

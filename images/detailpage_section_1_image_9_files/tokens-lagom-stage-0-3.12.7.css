@@ -19,7 +19,7 @@
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --grid-gutter: 12px;
-  --grid-padding: 24px;
+  --grid-margin: 24px;
   --grid-max-width: 1280px;
   --grid-columns: 12;
   --ratio-portrait: 0.693;
@@ -193,7 +193,7 @@
 @media (min-width: 48rem) {
   :root {
     --grid-gutter: 16px;
-    --grid-padding: 32px;
+    --grid-margin: 32px;
   }
 }
 @media (min-width: 64rem) {

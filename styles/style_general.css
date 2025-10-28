@@ -316,7 +316,7 @@
 
 *{
 	padding: 0;
-	padding: 0;
+	margin: 0;
 	scrollbar-width: none;
 }
 
@@ -486,7 +486,7 @@ footer ul li button svg{
     grid-row: 1;
     stroke: var(--color-text);
     fill: var(--color-background-2);
-    padding-left: 1em;
+    margin-left: 1em;
 }
 
 footer ul li button{
@@ -533,14 +533,14 @@ footer section a:last-of-type{
 
 footer section h2{
  order: 2;
- padding: 2em 0em 0em 0em;
+ margin: 2em 0em 0em 0em;
  padding: 0;
  flex-basis: 100%;
 }
 
 footer section h3{
   order: 5;
-  padding: 1em 0em 0em 0em;
+  margin: 1em 0em 0em 0em;
   flex-basis: 100%;
 }
 

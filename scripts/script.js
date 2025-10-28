@@ -54,6 +54,7 @@ document.querySelectorAll('main section:nth-child(5) ul li a, main section:nth-c
 
 
 // Labels
+// eerste label op 17em van top, volgende steeds 2em hoger, langste regel in letters altijd onderaan
 document.querySelectorAll('main section:nth-child(4) ul li, main section:nth-child(5) ul li, main section:nth-child(6) ul li, main section:nth-child(7) ul li')
   .forEach(li => {
     li.style.position = 'relative';
@@ -76,7 +77,7 @@ document.querySelectorAll('main section:nth-child(4) ul li, main section:nth-chi
         p.style.fontWeight = '600';
         p.style.fontSize = '0.8em';
 
-        // eerste label op 17em, volgende steeds 2em hoger, langste regel in letters altijd onderaan
+       
         const startTop = 17; 
         const spacing = 2; 
         p.style.top = `${startTop - index * spacing}em`;
@@ -95,7 +96,7 @@ document.querySelectorAll('main section:nth-child(4) ul li, main section:nth-chi
 
 // bronnen voor  deze code
 
-// ARRAY METHODS
+// ARRAY
 // https://www.youtube.com/watch?v=R8rmfD9Y5-c
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 // http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
