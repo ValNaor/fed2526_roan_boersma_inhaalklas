@@ -24,6 +24,34 @@
   --color-background-3:rgb(242, 196, 46);
 }
 
+
+
+
+/***********/
+/* Labels */ 
+/***********/
+
+.label {
+  position: absolute;
+  padding: 0.3em 0.5em;
+  font-weight: 600;
+  font-size: 0.8em;
+ 
+}
+
+.label-deal {
+  background-color: var(--color-deal-label);
+  color: var(--color-background);
+}
+
+.label-rest {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+
+
+
 /***********/
 /* Tiempos */ 
 /***********/
@@ -308,6 +336,61 @@
 
 
 
+/***********/
+/**Classes**/
+/***********/
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.carousel-volgende{
+
+  grid-row: 4;
+  grid-column: 2;
+
+  justify-self: end;
+  align-self: center;
+  padding: 1.5% 2%;
+  border: solid 1px var(--color-border);
+  z-index: 1000;
+}
+
+.carousel-terug{
+
+  grid-row: 4;
+  grid-column: 2;
+
+  justify-self: start;
+  align-self: center;
+  padding: 1.5% 2%;
+  border: solid 1px var(--color-border);
+  z-index: 1000;
+}
+
+.carousel-terug > svg,
+.carousel-volgende > svg{
+ 
+  fill: var(--color-text);
+  stroke: (none);
+  width: 25px;
+  height: 25px;
+}
+
+.carousel-terug > svg{ /*https://www.svgviewer.dev/s/407539/arrowhead-right*/
+  transform: matrix(-1,1.2246467991473532e-16,-1.2246467991473532e-16,-1,0,0);
+}
+
+
+
+
+
 
 
 /****************/
@@ -320,15 +403,10 @@
 	scrollbar-width: none;
 }
 
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+body{
+  width: 100%;
 }
+
 
 h3, h4, p, a {
 	order: 2;
@@ -348,7 +426,6 @@ li{
 	list-style: none;    
 	background-color: var(--color-background);  
 	flex-grow: 1;
-	max-height: fit-content;
 
 }
 
@@ -411,8 +488,7 @@ header nav ul{
 	flex-direction: row;
 	background-color: var(--color-background);	
 	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	padding: 0.8em 0.5em 0.8em 1em;
 	align-items: center;
 	border-bottom: solid 1px;
@@ -459,30 +535,46 @@ footer{
   background-color: var(--color-background-2);
 }
 
-footer ul li:nth-child(-n+2) button svg, footer ul li:nth-child(5) button svg, footer ul li:nth-child(6) button svg{
+footer ul li:nth-child(-n+2) button svg:first-of-type, 
+footer ul li:nth-child(5) button svg:first-of-type, 
+footer ul li:nth-child(6) button svg:first-of-type{
   fill: var(--color-text);
   stroke: none;
 }
 
+footer ul li:nth-child(-n+2) button svg:nth-child(3), 
+footer ul li:nth-child(5) button svg:nth-child(3), 
+footer ul li:nth-child(6) button svg:nth-of-type(3){
+  fill: var(--color-text);
+  stroke: 1px solid var(--color-text);
+  grid-column: 3;
+}
+
+
 footer ul li{
+    display: grid;
     background-color: var(--color-background-2);
     padding:1em;
     border-bottom: solid 1px;
     border-color: var(--color-border);
 }
+
 footer ul li button{
   background-color: var(--color-background-2);
   display: grid;
   align-items: center;
+  grid-template-columns: auto 1fr auto;
+  gap: 1em;
 }
 
 footer ul li button h2{
   grid-column: 2 / span 3;
   grid-row: 1;
+  justify-self: start;
 }
 
 footer ul li button svg{
-    grid-column: 1  / span 2;
+    grid-column: 1;
     grid-row: 1;
     stroke: var(--color-text);
     fill: var(--color-background-2);
@@ -501,7 +593,7 @@ footer h2{
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 600;
-  padding-left: 2em;
+  padding: 0;
 }
 
 footer h3{
@@ -561,3 +653,4 @@ footer section svg:last-of-type{
 ul li h3{
   text-transform: uppercase;
 }
+

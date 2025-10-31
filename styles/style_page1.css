@@ -391,15 +391,15 @@ main section:nth-child(7) ul{
 }
 
 main section:nth-child(7) ul li {
-  flex: 0 0 auto;
-  max-width: 100%;
-  position: relative;
+  flex: 0 0 45%;
+
 }
 
 main section:nth-child(7) ul li a {
   display: grid;
-  max-width: 50dvw;
-  grid-template-rows: auto auto auto 1fr;
+  grid-template-rows: auto auto auto  auto auto 1fr;
+
+  height: 100%;
   background-color: var(--color-background);
   align-items: center;
   gap: 0.5em;
@@ -436,7 +436,7 @@ main section:nth-child(7) ul li button{
   padding: 0.5em 0.7em 0.5em 0.7em;
 }
 
-main section:nth-child(7) ul li p{
+main section:nth-child(7) ul li a p{
   padding: 0em;
   grid-column: span 3;
 }

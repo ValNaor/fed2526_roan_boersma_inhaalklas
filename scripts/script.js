@@ -54,52 +54,68 @@ document.querySelectorAll('main section:nth-child(5) ul li a, main section:nth-c
 
 
 // Labels
-// eerste label op 17em van top, volgende steeds 2em hoger, langste regel in letters altijd onderaan
-document.querySelectorAll('main section:nth-child(4) ul li, main section:nth-child(5) ul li, main section:nth-child(6) ul li, main section:nth-child(7) ul li')
-  .forEach(li => {
-    li.style.position = 'relative';
 
-    var ps = Array.from(li.children).filter(el => el.tagName === 'P');
+const sections = [4, 5, 6, 7];
 
-    if (ps.length > 0) {
-      const dealColor = getComputedStyle(document.documentElement)
-                        .getPropertyValue('--color-deal-label');
-      const wit = getComputedStyle(document.documentElement)
-                        .getPropertyValue('--color-background');
-      const text = getComputedStyle(document.documentElement)
-                        .getPropertyValue('--color-text');
+sections.forEach(sectionNum => {
 
-      ps.sort((a, b) => b.textContent.trim().length - a.textContent.trim().length);
+  const lis = document.querySelectorAll(`main section:nth-child(${sectionNum}) ul li`);
 
-      ps.forEach((p, index) => {
-        p.style.position = 'absolute';
-        p.style.padding = '0.3em 0.5em';
-        p.style.fontWeight = '600';
-        p.style.fontSize = '0.8em';
+  lis.forEach((li, liIndex) => {
+    li.style.position = 'relative'; 
 
-       
-        const startTop = 17; 
-        const spacing = 2; 
-        p.style.top = `${startTop - index * spacing}em`;
+    const img = li.querySelector('a img'); 
+    if (!img) return;
+    const parentAnchor = `--carousel-${sectionNum}-img-${liIndex + 1}`;
+    img.style.setProperty('anchor-name', parentAnchor);
 
-        if (p.textContent.trim().toLowerCase() === 'deal') {
-          p.style.backgroundColor = dealColor;
-          p.style.color = wit;
-        } else {
-          p.style.backgroundColor = wit;
-          p.style.color = text;
-        }
-      });
-    }
+    const labels = Array.from(li.querySelectorAll('p')).filter(p => !p.closest('a'));
+    if (!labels.length) return; 
+
+    labels.sort((a, b) => b.textContent.trim().length - a.textContent.trim().length);
+
+    labels.forEach((p, labelIndex) => {
+
+      p.classList.add('label', p.textContent.trim().toLowerCase() === 'deal' ? 'label-deal' : 'label-rest');
+
+   
+      const labelAnchor = `${parentAnchor}-label-${labelIndex + 1}`;
+      p.style.setProperty('anchor-name', labelAnchor);
+      p.style.position = 'absolute'; 
+
+      if (labelIndex === 0) {
+        
+        p.style.setProperty('position-anchor', `${parentAnchor}`);
+        p.style.bottom = 'calc(anchor(bottom) + 1em)';
+      } else {
+        
+        const prevLabel = `${parentAnchor}-label-${labelIndex}`;
+        p.style.setProperty('position-anchor', `${prevLabel}`);
+        p.style.bottom = 'calc(anchor(top) + 0.5em)';
+      }
+    });
+  });
 });
-;
+
+
+
+
+
 
 // bronnen voor  deze code
 
-// ARRAY
+// ARRAY METHODS
 // https://www.youtube.com/watch?v=R8rmfD9Y5-c
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 // http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Input_boundary_assertion
+
+
+
+
+
+
+
+// Bronnen voor deze code
