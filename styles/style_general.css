@@ -425,8 +425,7 @@ svg{
 li{
 	list-style: none;    
 	background-color: var(--color-background);  
-	flex-grow: 1;
-
+  flex-grow: 2;
 }
 
 button{
@@ -654,3 +653,176 @@ ul li h3{
   text-transform: uppercase;
 }
 
+header nav ul li:last-of-type
+  {
+	  display: none;
+}
+
+header nav ul li:last-of-type button:nth-child(1),
+header nav ul li:last-of-type button:nth-child(2),
+header nav ul li:last-of-type button:nth-child(3)
+  {
+  
+	  background-color: rgb(255, 255, 255);
+    padding: 1em;
+
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+
+header nav ul li:last-of-type button[aria-current="page"]{
+  background-color: var(--color-text);
+  color: var(--color-background);
+  padding: 0.5em 1em;
+  font-size: 1em;
+}
+
+header nav ul li:last-of-type button:not([aria-current="page"]){
+  background-color: var(--color-background);
+
+  
+  padding: 0.5em 1em;
+}
+
+header nav:nth-child(3){
+  display: none;
+}
+
+header nav ul:nth-child(2){
+  display: none;
+}
+
+:focus-visible{
+
+  border-radius: 1px solid  var(--color-brand-mark);
+}
+
+/*****************/
+/* Media queries */
+/*****************/
+
+@media (min-width: 1100px) { 
+
+header{
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+  
+header nav{
+
+	background-color: var(--color-background);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+   
+}
+
+header nav ul{
+
+  background-color: var(--color-background);
+  min-width: 100%;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr auto auto auto auto;
+  gap: 1em;
+  padding: 0.5em 2em;
+  border: 0;
+
+}
+
+header nav:nth-child(3){
+  grid-row: 1;
+  
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  padding: 0.5em 0em;
+  background-color: var(--color-background-2);
+  
+}
+
+header nav ul li:last-of-type{
+
+  display: flex;
+  grid-row: 1;
+  grid-column: 1/2;
+
+}
+
+header nav ul li:last-of-type a{
+
+  color: var(--color-deal-label);
+}
+
+header nav ul li:first-of-type{
+
+  justify-self: center;
+  grid-row: 1;
+  grid-column: 2;
+
+}
+
+header nav:nth-child(2){
+
+  background-color: var(--color-background);
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr auto;
+
+}
+
+
+input{
+  
+  grid-column: 3 / 4;
+  justify-self: end;
+  align-self: end;
+  border: 1px solid var(--color-border);
+  padding: 0.9em;
+
+  anchor-name: --search-bar;
+}
+
+
+header nav:nth-child(2) button:nth-of-type(1){
+  justify-self: start;
+  display: none;
+}
+
+header nav:nth-child(2) button:nth-of-type(2){
+
+  grid-row: 1;
+  grid-column: 2;
+
+  position-anchor: --search-bar;
+  position:absolute;
+  bottom: calc(anchor(bottom) + 0.9em);
+  left: calc(anchor(left) + 1em);
+ 
+ 
+  padding: 0;
+  border-right: 0;
+  border-color: 0;
+}
+
+header nav:nth-child(2) button:nth-of-type(2) svg{
+
+ width: 20px;
+ height: 20px;
+}
+
+header nav ul:nth-child(2){
+  display: flex;
+
+  font-family: sans-serif;
+  font-size: 14px;
+  background-color: var(--color-background);
+  border: 0;
+}
+}

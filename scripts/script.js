@@ -53,6 +53,9 @@ document.querySelectorAll('main section:nth-child(5) ul li a, main section:nth-c
 });
 
 
+
+
+
 // Labels
 
 const sections = [4, 5, 6, 7];
