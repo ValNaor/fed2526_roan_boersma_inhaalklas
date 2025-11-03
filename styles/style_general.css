@@ -28,7 +28,7 @@
 
 
 /***********/
-/* Labels */ 
+/* Classes */ 
 /***********/
 
 .label {
@@ -48,9 +48,6 @@
   background-color: var(--color-background);
   color: var(--color-text);
 }
-
-
-
 
 /***********/
 /* Tiempos */ 
@@ -541,12 +538,13 @@ footer ul li:nth-child(6) button svg:first-of-type{
   stroke: none;
 }
 
-footer ul li:nth-child(-n+2) button svg:nth-child(3), 
+footer ul li:nth-child(-n+7) button svg:nth-child(3), 
 footer ul li:nth-child(5) button svg:nth-child(3), 
 footer ul li:nth-child(6) button svg:nth-of-type(3){
   fill: var(--color-text);
   stroke: 1px solid var(--color-text);
   grid-column: 3;
+  background-color: red;
 }
 
 
@@ -633,6 +631,7 @@ footer section h3{
   order: 5;
   margin: 1em 0em 0em 0em;
   flex-basis: 100%;
+  padding: 0;
 }
 
 footer section img{
@@ -642,6 +641,8 @@ footer section img{
 footer svg{
   order: 7;
 }
+
+footer ul li:nth-child(-n+) button svg:nth-child(3)
 
 footer section svg:last-of-type{
   stroke: var(--color-text);
@@ -693,10 +694,62 @@ header nav ul:nth-child(2){
   display: none;
 }
 
-:focus-visible{
+/***********************/
+/* Button open / close */
+/***********************/
 
-  border-radius: 1px solid  var(--color-brand-mark);
+footer button[aria-expanded="true"] + ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  transition: transform 0.3s ease;
+  justify-items: start;
 }
+
+footer ul li:nth-child(4) button[aria-expanded="true"] + ul,
+footer ul li:nth-child(5) button[aria-expanded="true"] + ul {
+  display: flex;
+  gap: 0.5em;
+  padding-left: 1em;
+}
+
+footer ul li:nth-child(4) button[aria-expanded="true"] + ul li,
+footer ul li:nth-child(5) button[aria-expanded="true"] + ul li {
+  max-width: fit-content;
+  padding: 1em 0em;
+
+}
+
+footer button[aria-expanded="true"] + ul li {
+  gap: 0.8em;
+  padding: 0.7em;
+  border: 0;
+}
+
+footer button[aria-expanded="true"] + ul a {
+  font-family: sans-serif;
+  font-size: 14px;
+
+}
+
+footer ul li:first-of-type  button[aria-expanded="true"] + ul li a:first-of-type {
+  font-weight: 700;
+}
+
+footer button svg:last-child {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+footer button[aria-expanded="true"] svg:last-child {
+  transform: rotate(0deg);
+}
+
+footer section a{
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
 
 /*****************/
 /* Media queries */
@@ -743,8 +796,10 @@ header nav:nth-child(3){
   font-weight: 700;
   padding: 0.5em 0em;
   background-color: var(--color-background-2);
-  
+
 }
+
+
 
 header nav ul li:last-of-type{
 
@@ -825,4 +880,31 @@ header nav ul:nth-child(2){
   background-color: var(--color-background);
   border: 0;
 }
+}
+
+
+/**********/
+/* 1400px */
+
+@media (min-width: 1200px){
+
+  header nav{
+    padding: 0em 13em;
+  }
+
+  header nav:nth-child(1){
+
+    padding: 0.5em 13em 0em 13em;
+  }
+
+  header nav:nth-child(3){
+
+    padding: 0em 13em;
+  }
+
+  footer ul li button{
+
+    padding: 0em 14%;
+
+  }
 }

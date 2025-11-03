@@ -100,11 +100,6 @@ sections.forEach(sectionNum => {
   });
 });
 
-
-
-
-
-
 // bronnen voor  deze code
 
 // ARRAY METHODS
@@ -119,6 +114,55 @@ sections.forEach(sectionNum => {
 
 
 
+// andere foto voor index html section 8 
+
+if (window.location.pathname.endsWith("index.html") || window.location.pathname === "/") {
+  const img = document.querySelector("main section:nth-child(8) img");
+
+  function updateImage() {
+    if (window.matchMedia("(min-width: 1100px)").matches) {
+      img.src = "../images/homepage_section_7_image_1_desktop.webp";
+    } else {
+      img.src = "../images/homepage_section_7_image_1.jpg";
+    }
+  }
+
+  updateImage();
+  window.addEventListener("resize", updateImage);
+}
 
 
-// Bronnen voor deze code
+
+
+
+// footer buttons
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll("footer button");
+
+  buttons.forEach((button) => {
+    const list = button.parentElement.querySelector("ul"); // safer selection
+
+    if (!list) return; // skip if no list found
+
+    const baseName = button.textContent.trim().toLowerCase().replace(/\s+/g, "-");
+    const listId = `footer-list-${baseName}`;
+
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-controls", listId);
+    list.id = listId;
+    list.hidden = true;
+
+    button.addEventListener("click", () => {
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
+      const newState = !isExpanded;
+
+      button.setAttribute("aria-expanded", newState);
+      list.hidden = !newState;
+    });
+  });
+});
+
+
+// https://www.youtube.com/watch?v=Nloq6uzF8RQ&t=67s
+// https://www.youtube.com/watch?v=WJERnXiFFug

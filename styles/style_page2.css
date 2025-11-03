@@ -612,7 +612,6 @@ main section:nth-child(6) ul li svg,
 main section:nth-child(7) ul li svg{
    grid-row: 6;
    width: 2.5em;
-   justify-self: center;
    fill: var(--color-background);
    stroke: var(--color-text);
 }
@@ -842,6 +841,11 @@ main section:nth-child(7) ul li:nth-child(11) a svg:last-of-type{
         position: relative;
     }
 
+    header nav:nth-child(1) ul li:nth-child(1){
+
+        flex-grow: 18;
+    } 
+
     body main section:nth-child(1){ 
         grid-column: 1 / -1;
         grid-row: 1 / 4;
@@ -955,7 +959,7 @@ main section:nth-child(7) ul li:nth-child(11) a svg:last-of-type{
         grid-row: 2;
 
         background-color: white;
-        justify-self: start;
+        justify-self: center;
         transform: translateY(-6em);
     }
 
@@ -1036,5 +1040,6 @@ main section:nth-child(7) ul li:nth-child(11) a svg:last-of-type{
         grid-row: 7;
         grid-column: 1 / -1;
     }
+    
 }
 
