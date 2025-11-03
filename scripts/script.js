@@ -138,20 +138,32 @@ if (window.location.pathname.endsWith("index.html") || window.location.pathname 
 // footer buttons
 
 document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll("footer button");
+const mobileQuery = window.matchMedia("(max-width: 764px)");
 
+function setupFooterToggle() {
+const buttons = document.querySelectorAll("footer button");
+
+if (!mobileQuery.matches) {
+  // Reset for desktop view
   buttons.forEach((button) => {
-    const list = button.parentElement.querySelector("ul"); // safer selection
+    const list = button.parentElement.querySelector("ul");
+    if (!list) return;
+    button.removeAttribute("aria-expanded");
+    list.hidden = false;
+  });
+  return;
+}
 
-    if (!list) return; // skip if no list found
+// Mobile behavior
+buttons.forEach((button) => {
+  const list = button.parentElement.querySelector("ul");
+  if (!list) return;
 
-    const baseName = button.textContent.trim().toLowerCase().replace(/\s+/g, "-");
-    const listId = `footer-list-${baseName}`;
-
+  // Prevent adding multiple click listeners
+  if (!button.hasAttribute("data-toggle-init")) {
     button.setAttribute("aria-expanded", "false");
-    button.setAttribute("aria-controls", listId);
-    list.id = listId;
     list.hidden = true;
+    button.dataset.toggleInit = "true";
 
     button.addEventListener("click", () => {
       const isExpanded = button.getAttribute("aria-expanded") === "true";
@@ -160,8 +172,15 @@ document.addEventListener("DOMContentLoaded", () => {
       button.setAttribute("aria-expanded", newState);
       list.hidden = !newState;
     });
-  });
+  }
 });
+
+}
+
+setupFooterToggle();
+mobileQuery.addEventListener("change", setupFooterToggle);
+});
+
 
 
 // https://www.youtube.com/watch?v=Nloq6uzF8RQ&t=67s
