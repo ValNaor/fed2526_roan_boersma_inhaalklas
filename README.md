@@ -94,8 +94,52 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Algemene structuur en opmaak zijn overzichtelijk
   - De website maakt gebruik van duidelijke koppen en secties, waardoor je snel kunt navigeren naar het gewenste onderdeel.
-  - Er is de mogelijkheig om lange carousels over te slaan.
-  - Er wordt consistent gebruik gemaakt van ARIA-labels / Alt tags.
+  - Er is de mogelijkheid gegeven om lange carousels over te slaan.
+
+
+    Content:
+    - Ja
+    - Ja
+    Global code:
+    - Nee
+    <img src="readme-images/readme_validate_html.png"  alt="zo'n 166 html fouten volgens de checker">
+    Er zijn zo;n 166 fouten volgens de checker
+    - Ja
+    - Ja
+    - Ja
+    Keyboard
+    - Ja, maar niet altijd hetzeflde
+    - Ja
+    Mobile and touch
+    - Ja
+    - Ja
+    - Ja
+    - Ja
+    Headings
+    - Ja
+    - Ja
+    - Nee
+    - Ja, gaat wel weer terug naar vorige headings
+    Lists
+    - Volgens mij wel ja
+    Images
+    - Ja
+    - Ja
+    - Ja
+    - Ja
+    Video
+    -  Nee
+    -  Ja
+    -  Ja
+    -  Nee
+    Controls
+    - Ja
+    - Ja
+    - Ja
+    - Nee
+    - Ja
+    - Ja
+   
 </details>
 
 
@@ -209,7 +253,49 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+   Content:
+    - Ja
+    - Ja
+    Global code:
+    - Nee
+    <img src="readme-images/2.png" alt="tijdsnood">
+    - Ja
+    - Ja
+    - Ja
+    Keyboard
+    - Ja
+    - Ja
+    Mobile and touch
+    - Ja
+    - Ja
+    - Ja
+    - Ja
+    Headings
+    - Ja
+    - Ja
+    - Ja
+    - Ja
+    Lists
+    - Ja
+    Images
+    - Ja
+    - Ja
+    - Ja
+    - Ja
+    Video
+    -  Ja
+    -  Ja
+    -  Ja
+    -  N/A
+    Controls
+    - Ja
+    - Ja
+    - Ja
+    - Ja
+    - Ja
+    - Ja
+   
 
 </details>
 
