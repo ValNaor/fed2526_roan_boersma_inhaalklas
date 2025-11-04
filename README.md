@@ -185,20 +185,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  ###Roan:
+  Font-face werkt niet
+
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  Ga verder zoals je bezig bent.
+  @font-face was niet juist gelinkt.
+  Gebruik geen margin, dit zorgt voor vervelende problemen.
+  
 
 </details>
 
@@ -232,21 +229,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  ##Roan: 
+  Custom buttons voor video
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  Geen oplossing voor de vraag, assistent docent wist hier de oplossing nier voor, moet zelf gaan zoeken.
+  Verder ziet alles er met 1 blik prima uit, ga verder zoals je bezig bent.
+  <del> inplaats van <s>
+  
 </details>
 
 
