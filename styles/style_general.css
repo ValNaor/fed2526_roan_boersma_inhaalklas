@@ -347,44 +347,9 @@
   width: 1px;
 }
 
-.carousel-volgende{
-
-  grid-row: 4;
-  grid-column: 2;
-
-  justify-self: end;
-  align-self: center;
-  padding: 1.5% 2%;
-  border: solid 1px var(--color-border);
-  z-index: 1000;
+.visible {
+  bottom: 0;          
 }
-
-.carousel-terug{
-
-  grid-row: 4;
-  grid-column: 2;
-
-  justify-self: start;
-  align-self: center;
-  padding: 1.5% 2%;
-  border: solid 1px var(--color-border);
-  z-index: 1000;
-}
-
-.carousel-terug > svg,
-.carousel-volgende > svg{
- 
-  fill: var(--color-text);
-  stroke: (none);
-  width: 25px;
-  height: 25px;
-}
-
-.carousel-terug > svg{ /*https://www.svgviewer.dev/s/407539/arrowhead-right*/
-  transform: matrix(-1,1.2246467991473532e-16,-1.2246467991473532e-16,-1,0,0);
-}
-
-
 
 
 
@@ -468,6 +433,15 @@ h4{
   text-overflow: ellipsis;
 }
 
+:focus:not(:focus-visible){
+  outline: none;
+}
+
+*:focus-visible{
+  outline: solid var(--color-brand-mark);
+  outline-offset: 10px;
+}
+
 header nav ul li:nth-child(1) a svg:nth-child(1){
 	fill: var(--color-brand-mark);
   width: 132px;
@@ -544,7 +518,7 @@ footer ul li:nth-child(6) button svg:nth-of-type(3){
   fill: var(--color-text);
   stroke: 1px solid var(--color-text);
   grid-column: 3;
-  background-color: red;
+
 }
 
 
@@ -754,6 +728,35 @@ footer section a{
   font-family: sans-serif;
   font-size: 14px;
 }
+
+
+/**************/
+/* Animations */
+/**************/
+
+main section ul li button svg:first-child path {
+fill: var(--color-brand-mark);
+transform-origin: center center;
+transform: scale(0);
+transition: transform 0.5s ease, fill 0.5s ease, stroke 0.5s ease;
+stroke: var(--color-brand-mark);
+}
+
+main section ul li button svg:last-child path {
+fill: transparent;
+stroke: var(--color-text);
+stroke-width: 2;
+transition: stroke 0.3s ease;
+}
+
+main section ul li button.liked svg:first-child path {
+transform: scale(1);
+}
+
+main section ul li button.liked svg:last-child path {
+stroke: var(--color-brand-mark);
+}
+
 
 
 /*****************/
@@ -1051,7 +1054,6 @@ footer ul li:nth-child(7){
   }
 
   footer section img:nth-of-type(-n+2){
-    grid-column: 2;
     grid-row: 4;
 
   }
@@ -1080,14 +1082,44 @@ footer ul li:nth-child(7){
 
   footer section h3{
     grid-row: 3;
-    grid-column: 4;
+    grid-column: 3;
     margin: 0;
   }
 
   footer ul li:nth-child(5) button svg:first-of-type{
     margin: 0;
   }
+
+  footer section svg:nth-of-type(-n+2){
+    grid-row: 4;
+    grid-column: 3;
+  }
+
+  footer section svg:nth-of-type(1){
+    justify-self: start;
+  }
+   footer section svg:nth-of-type(2){
+    justify-self: end;
+  }
+
+  footer section svg:nth-last-of-type(-n+2){
+    justify-self: start;
+  }
+
+  footer section svg:nth-last-of-type(1){
+    margin-left: 4em;
+  }
+
+
+  footer section svg:nth-last-of-type(-n+2){
+    grid-row: 4;
+    grid-column: 4;
+  }
 }
+
+
+
+
 
 /**********/
 /* 1100px */
@@ -1217,6 +1249,10 @@ header nav ul:nth-child(2){
   background-color: var(--color-background);
   border: 0;
 }
+
+  section ul li button:active svg{
+    fill: var(--color-brand-mark);
+  }
 }
 
 

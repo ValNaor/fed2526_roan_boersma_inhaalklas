@@ -144,7 +144,6 @@ function setupFooterToggle() {
 const buttons = document.querySelectorAll("footer button");
 
 if (!mobileQuery.matches) {
-  // Reset for desktop view
   buttons.forEach((button) => {
     const list = button.parentElement.querySelector("ul");
     if (!list) return;
@@ -154,12 +153,17 @@ if (!mobileQuery.matches) {
   return;
 }
 
-// Mobile behavior
+
+
+
+
+
+// mobiel
 buttons.forEach((button) => {
   const list = button.parentElement.querySelector("ul");
   if (!list) return;
 
-  // Prevent adding multiple click listeners
+
   if (!button.hasAttribute("data-toggle-init")) {
     button.setAttribute("aria-expanded", "false");
     list.hidden = true;
@@ -185,3 +189,184 @@ mobileQuery.addEventListener("change", setupFooterToggle);
 
 // https://www.youtube.com/watch?v=Nloq6uzF8RQ&t=67s
 // https://www.youtube.com/watch?v=WJERnXiFFug
+
+
+const allLists = document.querySelectorAll('ul');
+
+allLists.forEach(list => {
+  const listStyles = window.getComputedStyle(list);
+  
+  if (listStyles.overflowX === 'scroll' || listStyles.overflowX === 'auto') {
+    const likeButtons = list.querySelectorAll('button');
+
+    likeButtons.forEach((button, buttonIndex) => {
+      
+      if (localStorage.getItem(`liked-${buttonIndex}`) === 'true') {
+        button.classList.add('liked');
+      }
+     
+      button.addEventListener('click', () => {
+        button.classList.toggle('liked');
+        localStorage.setItem(`liked-${buttonIndex}`, button.classList.contains('liked'));
+      });
+    });
+  }
+});
+
+
+
+
+// ! buttons
+
+document.addEventListener('DOMContentLoaded', () => {
+  const currentPagePath = window.location.pathname;
+
+  // Section 10, index.html
+  if (currentPagePath.endsWith('index.html')) {
+    const section10 = document.querySelector('section:nth-child(10)');
+    if (section10) {
+      const openMenuButtons = document.querySelectorAll('button[aria-label="Menu Hoe aanbevelingen werken openen"]');
+      openMenuButtons.forEach(button => 
+        button.addEventListener('click', () => section10.classList.toggle('visible'))
+      );
+      section10.querySelectorAll('button').forEach(button => 
+        button.addEventListener('click', () => section10.classList.remove('visible'))
+      );
+    }
+  }
+
+
+
+
+
+
+  // Section 8, detail.html
+  if (currentPagePath.endsWith('detail.html')) {
+    const section8 = document.querySelector('section:nth-child(8)');
+    if (section8) {
+      const openMenuButtons = document.querySelectorAll('button[aria-label="Menu Hoe aanbevelingen werken openen"]');
+      openMenuButtons.forEach(button => 
+        button.addEventListener('click', () => section8.classList.toggle('visible'))
+      );
+      section8.querySelectorAll('button').forEach(button => 
+        button.addEventListener('click', () => section8.classList.remove('visible'))
+      );
+    }
+  }
+});
+
+
+
+
+
+
+
+// Carousel knoppen
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("section:nth-of-type(4) ul, section:nth-of-type(5) ul, section:nth-of-type(6) ul, section:nth-of-type(7) ul").forEach((ul) => {
+    const prev = ul.previousElementSibling;
+    const next = ul.nextElementSibling;
+
+    const scrollAmount = ul.scrollWidth * 0.1;
+
+    const updateButtons = () => {
+      if (prev?.tagName.toLowerCase() === "button") {
+        prev.style.visibility = ul.scrollLeft <= 0 ? "hidden" : "visible";
+      }
+      if (next?.tagName.toLowerCase() === "button") {
+        const atEnd =
+          ul.scrollLeft + ul.clientWidth >= ul.scrollWidth - 1;
+        next.style.visibility = atEnd ? "hidden" : "visible";
+      }
+    };
+
+    ul.addEventListener("scroll", updateButtons);
+
+    if (prev?.tagName.toLowerCase() === "button") {
+      prev.addEventListener("click", () => {
+        ul.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      });
+    }
+
+    if (next?.tagName.toLowerCase() === "button") {
+      next.addEventListener("click", () => {
+        ul.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      });
+    }
+
+    // Initial visibility check
+    updateButtons();
+  });
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const currentPagePath = window.location.pathname;
+
+  // Only run on index.html
+  if (currentPagePath.endsWith('index.html')) {
+    // Scope: your section (change selector if needed)
+    const section10 = document.querySelector('section:nth-child(10)');
+    if (section10) {
+      const buttons = section10.querySelectorAll('button');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const nextUl = button.nextElementSibling;
+
+          if (nextUl && nextUl.tagName === 'UL') {
+            // Toggle UL open/close
+            if (nextUl.style.maxHeight && nextUl.style.maxHeight !== '0px') {
+              nextUl.style.maxHeight = '0px'; // close
+            } else {
+              nextUl.style.display = 'block'; // make visible
+              nextUl.style.maxHeight = nextUl.scrollHeight + 'px'; // animate open
+            }
+
+            // Rotate the button's SVG
+            const svg = button.querySelector('svg');
+            svg.style.transform = (svg.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
+          } else {
+            // Last button: just rotate icon
+            const svg = button.querySelector('svg');
+            svg.style.transform = (svg.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
+          }
+        });
+      });
+    }
+  }
+});
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const section = document.querySelector("section:nth-child(3)");
+  if (!section) return;
+
+  const buttons = section.querySelectorAll("button");
+
+  buttons.forEach((button) => {
+    const list = button.nextElementSibling; // <ul> directly under the button
+    if (!list || list.tagName !== "UL") return;
+
+    // Hide the list initially
+    list.hidden = true;
+    button.setAttribute("aria-expanded", "false");
+
+    button.addEventListener("click", (e) => {
+      e.stopPropagation(); // prevent accidental bubbling
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
+      button.setAttribute("aria-expanded", String(!isExpanded));
+      list.hidden = isExpanded; // toggle visibility
+    });
+  });
+});
+
+
