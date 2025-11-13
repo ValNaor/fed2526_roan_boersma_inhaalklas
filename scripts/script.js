@@ -264,10 +264,20 @@ document.addEventListener('DOMContentLoaded', () => {
 // Carousel knoppen
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("section:nth-of-type(4) ul, section:nth-of-type(5) ul, section:nth-of-type(6) ul, section:nth-of-type(7) ul").forEach((ul) => {
+  const currentPage = window.location.pathname.split("/").pop();
+  let sectionSelectors = "";
+
+  if (currentPage === "" || currentPage === "index.html") {
+    sectionSelectors = "section:nth-of-type(1) ul, section:nth-of-type(6) ul";
+  } else if (currentPage === "detail.html") {
+    sectionSelectors = "section:nth-of-type(4) ul, section:nth-of-type(5) ul, section:nth-of-type(6) ul, section:nth-of-type(7) ul";
+  } else {
+    return;
+  }
+
+  document.querySelectorAll(sectionSelectors).forEach((ul) => {
     const prev = ul.previousElementSibling;
     const next = ul.nextElementSibling;
-
     const scrollAmount = ul.scrollWidth * 0.1;
 
     const updateButtons = () => {
@@ -275,8 +285,7 @@ document.addEventListener("DOMContentLoaded", () => {
         prev.style.visibility = ul.scrollLeft <= 0 ? "hidden" : "visible";
       }
       if (next?.tagName.toLowerCase() === "button") {
-        const atEnd =
-          ul.scrollLeft + ul.clientWidth >= ul.scrollWidth - 1;
+        const atEnd = ul.scrollLeft + ul.clientWidth >= ul.scrollWidth - 1;
         next.style.visibility = atEnd ? "hidden" : "visible";
       }
     };
@@ -295,7 +304,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // Initial visibility check
     updateButtons();
   });
 });
@@ -304,12 +312,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const currentPagePath = window.location.pathname;
 
-  // Only run on index.html
   if (currentPagePath.endsWith('index.html')) {
-    // Scope: your section (change selector if needed)
     const section10 = document.querySelector('section:nth-child(10)');
     if (section10) {
       const buttons = section10.querySelectorAll('button');
@@ -319,19 +327,18 @@ document.addEventListener('DOMContentLoaded', () => {
           const nextUl = button.nextElementSibling;
 
           if (nextUl && nextUl.tagName === 'UL') {
-            // Toggle UL open/close
             if (nextUl.style.maxHeight && nextUl.style.maxHeight !== '0px') {
-              nextUl.style.maxHeight = '0px'; // close
+              nextUl.style.maxHeight = '0px';
             } else {
-              nextUl.style.display = 'block'; // make visible
-              nextUl.style.maxHeight = nextUl.scrollHeight + 'px'; // animate open
+              nextUl.style.display = 'block';
+              nextUl.style.maxHeight = nextUl.scrollHeight + 'px';
             }
 
-            // Rotate the button's SVG
             const svg = button.querySelector('svg');
             svg.style.transform = (svg.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
-          } else {
-            // Last button: just rotate icon
+          } 
+          
+          else {
             const svg = button.querySelector('svg');
             svg.style.transform = (svg.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
           }
@@ -368,5 +375,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+
+
+// Bepaal op welke pagina we zijn
+const currentPage = window.location.pathname;
+
+// Selecteer de knop die het opent
+const openSectionBtn = document.querySelector("header nav:nth-child(2) button");
+
+
+var targetSection;
+var closeSectionBtn;
+
+if (currentPage.endsWith("index.html") || currentPage === "/" || currentPage === "/index.html") {
+  targetSection = document.querySelector("main section:nth-child(11)");
+} else if (currentPage.endsWith("detail.html")) {
+  targetSection = document.querySelector("main section:nth-child(9)");
+}
+
+// Voeg event listeners toe als de sectie bestaat
+if (targetSection) {
+  closeSectionBtn = targetSection.querySelector("button:first-of-type");
+
+  openSectionBtn.addEventListener("click", () => {
+    targetSection.classList.add("open-horizontal");
+  });
+
+  closeSectionBtn.addEventListener("click", () => {
+    targetSection.classList.remove("open-horizontal");
+  });
+}
+
 
 

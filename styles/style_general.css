@@ -351,6 +351,15 @@
   bottom: 0;          
 }
 
+main section:nth-child(11).open-horizontal{
+
+  left: 0;
+}
+
+main section:nth-child(9).open-horizontal{
+
+  left: 0;
+}
 
 
 
@@ -439,7 +448,8 @@ h4{
 
 *:focus-visible{
   outline: solid var(--color-brand-mark);
-  outline-offset: 10px;
+  stroke: solid var(--color-brand-mark);
+  z-index: 1000;
 }
 
 header nav ul li:nth-child(1) a svg:nth-child(1){
@@ -749,15 +759,33 @@ stroke-width: 2;
 transition: stroke 0.3s ease;
 }
 
-main section ul li button.liked svg:first-child path {
+main section ul li button.liked svg:first-child path,
+main section ul li button:hover svg:first-child path {
 transform: scale(1);
 }
 
-main section ul li button.liked svg:last-child path {
+main section ul li button.liked svg:last-child path,
+main  section main section ul li button:hover svg:last-child path {
 stroke: var(--color-brand-mark);
 }
 
+nav a:hover,
+footer a:hover{
 
+  text-decoration: underline;
+  text-underline-offset: 20%;
+  color: var(--color-brand-mark);
+}
+
+nav svg:hover{
+
+  fill: var(--color-brand-mark);
+}
+
+nav:nth-child(2) svg:hover{
+
+  fill: inherit;
+}
 
 /*****************/
 /* Media queries */
@@ -1305,3 +1333,5 @@ footer ul li:nth-child(3){
   padding: 1em;
 }
 }
+
+

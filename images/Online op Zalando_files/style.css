@@ -475,9 +475,9 @@ main section:nth-child(1) h3{
 
 }
 
-main section:nth-child(1) button{
+main section:nth-child(1) button:nth-of-type(1){
 	grid-row: 1;
-	grid-column: 3;
+	grid-column: 3 / -1;
 	justify-self: center;
 	padding-left: 4em;
 }
@@ -793,6 +793,11 @@ main section:nth-child(6) a{
   font-family: sans-serif, Arial, Helvetica;
   font-weight: 700;
   color: var(--color-text);
+}
+
+main section:nth-child(6) a:hover #text{
+
+  color: var(--color-brand-mark);
 }
 
 main section:nth-child(6) a svg{
