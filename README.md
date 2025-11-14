@@ -255,48 +255,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
 
-   Content:
-    - Ja
-    - Ja
-    Global code:
-    - Nee
-    <img src="readme-images/2.png" alt="tijdsnood">
-    - Ja
-    - Ja
-    - Ja
-    Keyboard
-    - Ja
-    - Ja
-    Mobile and touch
-    - Ja
-    - Ja
-    - Ja
-    - Ja
-    Headings
-    - Ja
-    - Ja
-    - Ja
-    - Ja
-    Lists
-    - Ja
-    Images
-    - Ja
-    - Ja
-    - Ja
-    - Ja
-    Video
-    -  Ja
-    -  Ja
-    -  Ja
-    -  N/A
-    Controls
-    - Ja
-    - Ja
-    - Ja
-    - Ja
-    - Ja
-    - Ja
-   
+  - Ik heb de focus-styling verbeterd, zodat er duidelijk contrast is.
+  - Ik heb per link minimaal twee manieren toegevoegd om aan te tonen dat deze in focus is.
+  - Ik heb alle img's een alt tag toegewezen.
+  - De video staat niet meer op auto play.
+  - <Nav> wordt nu gebruikt waar dat nodig is
 
 </details>
 
