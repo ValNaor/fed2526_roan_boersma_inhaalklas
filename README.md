@@ -56,90 +56,91 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
-  ### Bevindingen
-  # Niet goed
-  ### Navigatie & toetsenbord
-  - Niet alle knoppen en links zijn bereikbaar met het toetsenbord.
-  - De focus is niet altijd zichtbaar, waardoor je niet ziet waar je je bevindt.
-  - Het hoofdmenu en submenu’s werken niet logisch: soms moet je pijltjestoetsen gebruiken in plaats van tab, wat verwarrend is.
+ ### Content
+
+ - Er wordt geen jargon gebruikt, behalve wanneer het gaat om termen zoals de naam van een kledingstuk, het type kledingstuk of collecties van merken.
+ - De alt-tags ontbreken soms volledig, en wanneer ze wel aanwezig zijn, zijn ze niet descriptief genoeg.
+  <img src="readme-images/1.png">
+
+ ### Global code
+
+ - De HTML bevat veel fouten
+  <img src="readme-images/3.png">
+  <img src="readme-images/4.png">
+ - De HTML bevat een lang-attribuut, die verandert afhankelijk van de taalkeuze.
+ - <img src="readme-images/5.png">
+ - De website heeft een h1 op de pagina. Semantisch is dit volgens mij correct, maar de h1 staat onderaan, wat ongebruikelijk is en het lastig maakt om dit in de inspector goed te lezen.
+ - <img src="readme-images/6.png">
+ - De viewport-zoom is niet disabled.
+   <img src="readme-images/7.png">
+
+ ### Keyboard
+
+ - Er is een zichtbare focus-stijl aanwezig, maar het contrast is laag.
+  <img src="readme-images/8.png">
+ - De keyboard-focus volgt een logische volgorde, wat overeenkomt met de visuele orde.
+
+ ### Mobile and touch
+ - Ja, dat is mogelijk. Het werkt dan niet helemaal optimaal, maar functioneert wel.
+  <img src="readme-images/9.png">
+ - Er is geen horizontale scroll, tenzij dit bewust is toegepast.
+ - Voor mij zijn de knoppen groot genoeg, maar voor iemand met grotere vingers kan dit een probleem vormen.
+ - Ik klik niet per ongeluk op links of knoppen. Er blijkt dus voldoende ruimte te zijn om te scrollen.
+
+ ### Headings
+ - In het geheel wordt elke sectie correct geïntroduceerd, maar bij een aantal secties ontbreekt een h2. In plaats daarvan begint de sectie met een p of span-element.
+  <img src="readme-images/10.png">
+ - Er is maar één h1 per pagina. Bij sommige pagina's staat deze onderaan, zoals eerder benoemd.
+ - De website slaat geen headings over, maar gebruikt ze wel op een aparte manier. Zo zitten er bijvoorbeeld een div en een span binnen een h2, in plaats van dat er correct een h2 gevolgd wordt door een h3.
+   <img src="readme-images/11.png">
+
+ ### Lists
+  - De ul bevat de li-elementen als kinderen en wordt gebruikt voor de juiste content. Alleen wordt bijvoorbeeld geen nav-element gebruikt, maar een div om dit te wrappen.
+    <img src="readme-images/12.png">
     
-  ### Bestelproces
-  - Het volledig afronden van een bestelling zonder muis is niet mogelijk.
-    <img src="readme-images/narrator_test_readme_image_2"  alt="Betaal venster van zalando, is niet bereikbaar zonder gebruik van pijl toetsen">
-  - Adresinvoer werkt niet goed: na postcode kun je niet verder tabben naar een adreskeuze.
-  - Bezorgopties en betaalmethodes zijn soms niet toegankelijk; keuzerondjes missen duidelijke labels of zijn helemaal niet te bereiken.
+ ### Images
 
-  ### Productpagina’s
-  - Maatkeuze-opties hebben soms geen labels, waardoor de screenreader niet duidelijk kan voorlezen wat je selecteert.
-  - Prijzen en productinformatie worden niet altijd correct voorgelezen.
+  - De afbeeldingen bevatten alt-tags die een duidelijke omschrijving van de foto geven.
+    <img src="readme-images/13.png">
+  - N/A
+  - N/A
+  - N/A
+ 
+ ### Media
+  - De video staat op autoplay, maar is wel gemute.
+  - Alle media kan gepauzeerd worden.
+  - Volgens mij bevat de video geen captions, maar het is waarschijnlijk meer bedoeld als decoratieve video.
+  <img src="readme-images/15.png">
+  - N/A
 
-  ### Links, knoppen & iconen
-  - Sommige iconen (bijv. SVG’s) hebben geen beschrijving, waardoor je niet weet wat ze doen.
-  - Texten worden soms dubbel voorgelezen, bijvoorbeeld bij de cookiebanner, ook wordt er veel onnodige informatie voorgelezen.
-  - Soms worden headings overgeslagen.
+ ### Controls
+  - Ja, het a element wordt correct gebruikt voor links.
+  <img src="readme-images/16.png">
+  - Links zien er over het algemeen uit als links, maar sommige links lijken eerder op buttons.
+  - <img src="readme-images/14.png">
+  - Alle controls hebben een focus-state.
+    <img src="readme-images/8.png">
+  - Voor buttons wordt het juiste element gebruikt
+  - De website bevat skip-links, die alleen zichtbaar zijn wanneer ze gefocust zijn.
+  - <img src="readme-images/17.png">
+  - N/A
+    
+ ### Appearence
+  - Nee
+  - Het werkt, maar het ziet er niet bepaald mooi uit.
+    <img src="readme-images/18.png">
+  - De tekst kan worden vergroot tot 200%.
+  - Alle informatie, behalve de focus, wordt op twee manieren overgebracht.
 
-  ### Visueel & design
-  - Het contrast is op sommige plekken onvoldoende, waardoor teksten lastig te lezen zijn.
-  - Er is geen dark mode, waardoor gebruikers altijd in de lichte weergave zitten.
+ ### Appearence
+  - De animatie van de like-knop is vrij snel, maar vormt geen probleem.
+  - N/A
+  - Dit kan ik niet vinden.
 
-  # Wel goed
-  ### Productpagina’s zijn goed te navigeren
-  - De productinformatie, zoals prijs, maat en kleur, wordt duidelijk voorgelezen door de screenreader.
-  - De tabvolgorde is logisch, waardoor je goed door de verschillende secties van de pagina kan navigeren.
-  
-  ### Zoekfunctie is toegankelijk
-  - De zoekbalk is goed bereikbaar met het toetsenbord en de screenreader leest de zoekresultaten duidelijk voor.
-  <img src="readme-images/narrator_test_readme_image_1"  alt="Screenreader op de searchbalk met Blkvis ingevuld in de searchbar">
-  - Filteropties zijn aanwezig en worden correct voorgelezen, hoewel ze soms wat uitgebreid zijn dit kan goed of slecht zijn.
-
-  ### Algemene structuur en opmaak zijn overzichtelijk
-  - De website maakt gebruik van duidelijke koppen en secties, waardoor je snel kunt navigeren naar het gewenste onderdeel.
-  - Er is de mogelijkheid gegeven om lange carousels over te slaan.
-
-
-    Content:
-    - Ja
-    - Ja
-    Global code:
-    - Nee
-    <img src="readme-images/readme_validate_html.png"  alt="zo'n 166 html fouten volgens de checker">
-    Er zijn zo;n 166 fouten volgens de checker
-    - Ja
-    - Ja
-    - Ja
-    Keyboard
-    - Ja, maar niet altijd hetzeflde
-    - Ja
-    Mobile and touch
-    - Ja
-    - Ja
-    - Ja
-    - Ja
-    Headings
-    - Ja
-    - Ja
-    - Nee
-    - Ja, gaat wel weer terug naar vorige headings
-    Lists
-    - Volgens mij wel ja
-    Images
-    - Ja
-    - Ja
-    - Ja
-    - Ja
-    Video
-    -  Nee
-    -  Ja
-    -  Ja
-    -  Nee
-    Controls
-    - Ja
-    - Ja
-    - Ja
-    - Nee
-    - Ja
-    - Ja
-   
+ ### Color contrast
+  - Alles heeft dezelfde kleur...
+  - N/A
+  - Dit kan ik niet vinden.
 </details>
 
 
