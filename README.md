@@ -299,20 +299,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
-  ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+Het bijhouden van mijn read-me vond ik een stuk lastiger dan verwacht. Omdat ik dit onderdeel niet leuk vond, kostte het me veel meer tijd dan nodig; wat eigenlijk een klus van ongeveer dertig minuten had moeten zijn, voelde al snel als vier uur werk. Dit leidde tot frustratie en verminderde mijn motivatie. Tegelijkertijd merkte ik dat ik door mijn eigen wil om te leren veel van de inhoud goed heb kunnen toepassen. Door informatie uit video’s en de MDN-webdocs te halen, kon ik echt begrijpen wat ik had gedaan. Hierdoor kon ik deze kennis ook bij volgende momenten opnieuw gebruiken en effectief toepassen waar dat nodig was.
+
+Ik weet ook van mezelf dat ik te veel bezig ben geweest met een aantal novelty-ideeën die wel heel tof waren, maar er wel voor hebben gezorgd dat ik een aantal andere onderdelen niet volledig heb kunnen afronden. Zo werken de pijlen bijvoorbeeld volledig op de detail.html, maar niet op de index.html. Ook kon ik niet vinden hoe ik alles donkerder kon maken zodra mijn side-menu open was. Daarnaast heb ik een aantal SVG’s in img-tags staan, wat wel werkt, maar technisch gezien niet correct is. Op de detail.html heb ik bovendien een derde schaalgrootte voor de eerste sectie niet toegepast, omdat ik hier te lang mee bezig zou zijn en het niet realistisch vond om dit netjes af te werken. Deze punten laten zien dat ik soms te veel focus op nieuwe functies heb gelegd, waardoor sommige technische aspecten niet optimaal zijn afgerond.
+
+Hiervoor heb ik nog nooit met CSS Grid gewerkt en het was bovendien een tijd geleden dat ik met JavaScript en Flexbox bezig was. Het was daarom ook leuk om deze kennis weer op te frissen en toe te passen in de opdracht, waardoor ik mijn vaardigheden verder heb kunnen uitbreiden. Daarnaast heb ik gewerkt met een nieuw concept binnen het coden, namelijk anchors. Dit was precies waar ik naar op zoek was en het voelde erg goed om hiermee een oplossing te vinden voor een probleem waar ik eerder tegenaan liep.
+
+Waar ik voornamelijk aan moet werken bij volgende projecten, is mijn werksnelheid en de concrete netheid die nodig is om toe te werken naar een professioneel product. Door hier beter op te letten, kan ik efficiënter werken en zorgen dat mijn werk zowel functioneel als netjes afgewerkt is.
 
 
-  ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
-
-  ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  
 </details>
 
 
